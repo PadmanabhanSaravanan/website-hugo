@@ -1,0 +1,2524 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+
+
+<link rel="shortcut icon" href="/website/images/logo1.png" >
+<link rel="apple-touch-icon" href="/website/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/images/logo1.png">
+
+<title>HTTP | Swayaan LMS</title>
+<meta name="description" content="Documentation for HTTP.
+">
+<meta property="og:title" content="HTTP" />
+<meta property="og:description" content="Documentation for HTTP.
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://padmanabhansaravanan.github.io/website/docs/http/readme/" /><meta property="article:section" content="docs" />
+
+
+
+<meta itemprop="name" content="HTTP">
+<meta itemprop="description" content="Documentation for HTTP.
+">
+
+<meta itemprop="wordCount" content="10732">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="HTTP"/>
+<meta name="twitter:description" content="Documentation for HTTP.
+"/>
+
+
+
+
+<link rel="preload" href="/website/scss/main.min.d5588b642409ecc4d624b42964630b88fe7e88536ab37b2844c4b2d43e0ec807.css" as="style">
+<link href="/website/scss/main.min.d5588b642409ecc4d624b42964630b88fe7e88536ab37b2844c4b2d43e0ec807.css" rel="stylesheet" integrity="">
+
+<script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-page">
+    <header>
+      <style>
+  .td-navbar {
+    background-color: #1C60C8;  
+  }
+</style>
+
+
+<nav class="td-navbar navbar-dark js-navbar-scroll">
+<div class="container-fluid flex-column flex-md-row">
+  <a class="navbar-brand" href="/website/"><span class="navbar-brand__logo navbar-logo"><img src="/website/images/logo1.png" alt="Icon 1" width="25px" height="25px">
+        
+      </span><span class="navbar-brand__name">Swayaan LMS</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="/website/docs/"><i class='fa-solid fa-book'></i><span>Tutorial</span></a>
+      </li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+  <script>
+    $(function() {
+    $("#td-section-nav a").removeClass("active");
+    $("#td-section-nav #m-websitedocshttpreadme").addClass("active"); 
+    $("#td-section-nav #m-websitedocshttpreadme-li span").addClass("td-sidebar-nav-active-item"); 
+    $("#td-section-nav #m-websitedocshttpreadme").parents("li").addClass("active-path"); 
+    $("#td-section-nav li.active-path").addClass("show"); 
+    $("#td-section-nav li.active-path").children("input").prop('checked', true);
+    $("#td-section-nav #m-websitedocshttpreadme-li").siblings("li").addClass("show");  
+    $("#td-section-nav #m-websitedocshttpreadme-li").children("ul").children("li").addClass("show");  
+    $("#td-sidebar-menu").toggleClass("d-none"); 
+    });
+  </script>
+  <div id="td-sidebar-menu" class="td-sidebar__inner d-none">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocs-li">
+  <a href="/website/docs/" title="Documentation" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-websitedocs"><span class="">Tutorial</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocshttpreadme-li">
+  <input type="checkbox" id="m-websitedocshttpreadme-check"/>
+  <label for="m-websitedocshttpreadme-check"><a href="/website/docs/http/readme/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocshttpreadme"><span class="">HTTP</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsmysqlreadme-li">
+  <input type="checkbox" id="m-websitedocsmysqlreadme-check"/>
+  <label for="m-websitedocsmysqlreadme-check"><a href="/website/docs/mysql/readme/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsmysqlreadme"><span class="">MySQL</span></a></label>
+  
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            
+<div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+<a href="https://github.com/PadmanabhanSaravanan/website/tree/main/content/en/docs/http/README.md" class="td-page-meta--view" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines fa-fw"></i> View page source</a>
+  <a href="https://github.com/PadmanabhanSaravanan/website/edit/main/content/en/docs/http/README.md" class="td-page-meta--edit" target="_blank" rel="noopener"><i class="fa-solid fa-pen-to-square fa-fw"></i> Edit this page</a>
+  <a href="https://github.com/PadmanabhanSaravanan/website/new/main/content/en/docs/http?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" class="td-page-meta--child" target="_blank" rel="noopener"><i class="fa-solid fa-pen-to-square fa-fw"></i> Create child page</a>
+  <a href="https://github.com/PadmanabhanSaravanan/website/issues/new?title=HTTP" class="td-page-meta--issue" target="_blank" rel="noopener"><i class="fa-solid fa-list-check fa-fw"></i> Create documentation issue</a>
+  
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#table-of-content">TABLE OF CONTENT</a></li>
+    <li><a href="#introduction-to-http">Introduction to HTTP</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#http-parameters">HTTP Parameters</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#working-of-web">Working of Web</a></li>
+    <li><a href="#http-messages">HTTP Messages</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#http-request">HTTP Request</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#http-responses">HTTP Responses</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#http-methods">HTTP Methods</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#http-status-codes">HTTP Status Codes</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#http-header-fields">HTTP Header Fields</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#http-cookies">HTTP Cookies</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#http-caching">HTTP Caching</a></li>
+    <li><a href="#http-cache-vs-http-cookies">HTTP Cache vs HTTP Cookies</a></li>
+    <li><a href="#http-url-encoding">HTTP URL Encoding</a></li>
+    <li><a href="#http-security">HTTP Security</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#http-examples">HTTP Examples</a></li>
+    <li><a href="#reference">Reference</a></li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/website/docs/">Tutorial</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    HTTP</li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>HTTP</h1>
+	<div class="lead">Documentation for HTTP.</div>
+	<header class="article-meta">
+		
+</header>
+	<h1 id="http">HTTP</h1>
+<p><img src="/images-http/logo.png" alt="image logo"></p>
+<h2 id="table-of-content">TABLE OF CONTENT</h2>
+<ol>
+<li><a href="#introduction-to-http"><strong>Introduction to HTTP</strong></a></li>
+<li><a href="#http-parameters"><strong>HTTP Parameters</strong></a></li>
+<li><a href="#working-of-web"><strong>Working of web</strong></a></li>
+<li><a href="#http-messages"><strong>HTTP Messages</strong></a></li>
+<li><a href="#http-request"><strong>HTTP Requests</strong></a></li>
+<li><a href="#http-responses"><strong>HTTP Responses</strong></a></li>
+<li><a href="#http-methods"><strong>HTTP Methods</strong></a></li>
+<li><a href="#http-status-codes"><strong>HTTP Status Codes</strong></a></li>
+<li><a href="#http-header-fields"><strong>HTTP Header Fields</strong></a></li>
+<li><a href="#http-cookies"><strong>HTTP Cookies</strong></a></li>
+<li><a href="#http-caching"><strong>HTTP Caching</strong></a></li>
+<li><a href="#http-url-encoding"><strong>HTTP URL Encoding</strong></a></li>
+<li><a href="#http-security"><strong>HTTP Security</strong></a></li>
+<li><a href="#http-examples"><strong>HTTP Examples</strong></a></li>
+<li><a href="#reference"><strong>Reference</strong></a></li>
+</ol>
+<h2 id="introduction-to-http">Introduction to HTTP</h2>
+<ul>
+<li><a href="#what-is-http"><strong>What is HTTP</strong></a></li>
+<li><a href="#features-of-http"><strong>Features of HTTP</strong></a></li>
+<li><a href="#http-architecture"><strong>HTTP Architecture</strong></a></li>
+<li><a href="#advantages-of-http"><strong>Advantages of HTTP</strong></a></li>
+<li><a href="#disadvantages-of-http"><strong>Disadvantages of HTTP</strong></a></li>
+</ul>
+<h4 id="what-is-http">What is HTTP</h4>
+<ul>
+<li>HTTP stands for Hyper Text Transfer Protocol</li>
+<li>The primary function of HTTP is to establish a connection with the server and send HTML pages back to the user&rsquo;s browser.</li>
+<li>HTTP is an application protocol that runs on top of the TCP/IP suite of protocols, which forms the foundation of the internet.</li>
+</ul>
+<!-- raw HTML omitted -->
+<p><strong>TCP/IP</strong> - Transmission Control Protocol/Internet Protocol
+<img src="/images-http/http.png" alt="image http"></p>
+<h4 id="features-of-http">Features of HTTP</h4>
+<p>There are three basic features of HTTP</p>
+<ul>
+<li><strong>HTTP is connectionless</strong> : The HTTP client, i.e., a browser initiates an HTTP request and after a request is made, the client waits for the response. The server processes the request and sends a response back after which client disconnect the connection. So client and server knows about each other during current request and response only. Further requests are made on new connection like client and server are new to each other.</li>
+<li><strong>HTTP is media independent</strong>: It means, any type of data can be sent by HTTP as long as both the client and the server know how to handle the data content. It is required for the client as well as the server to specify the content type using appropriate MIME-type.</li>
+<li><strong>HTTP is stateless:</strong> As mentioned above, HTTP is connectionless and it is a direct result of HTTP being a stateless protocol. The server and client are aware of each other only during a current request. Afterwards, both of them forget about each other. Due to this nature of the protocol, neither the client nor the browser can retain information between different requests across the web pages.</li>
+</ul>
+<h4 id="http-architecture">HTTP Architecture</h4>
+<p>The following diagram shows a very basic architecture of a web application and depicts where HTTP sits:</p>
+<p><img src="/images-http/Architecture.png" alt="image architecture"><!-- raw HTML omitted --></p>
+<p>The HTTP protocol is a request/response protocol based on the client/server based architecture where web browsers, robots and search engines, etc. act like HTTP clients, and the Web server acts as a server.</p>
+<p>Client
+The HTTP client sends a request to the server in the form of a request method, URI, and protocol version, followed by a MIME-like message containing request modifiers, client information, and possible body content over a TCP/IP connection.</p>
+<p>Server
+The HTTP server responds with a status line, including the message&rsquo;s protocol version and a success or error code, followed by a MIME-like message containing server information, entity meta information, and possible entity-body content.</p>
+<h4 id="advantages-of-http">Advantages of HTTP</h4>
+<ol>
+<li>
+<p><strong>Addressing</strong>: HTTP uses advanced scheme of addressing. It assigns IP address with recognizable names so that it can be identified easily in the World Wide Web. Compared to the standard procedure of IP address with a series of numbers, using this the public can easily engage with the internet.</p>
+</li>
+<li>
+<p><strong>Flexibility</strong> : Whenever there are additional capabilities needed by an application, HTTP has the capability to download extensions or plugins and display the relevant data. These can include Flash players and Acrobat reader.</p>
+</li>
+<li>
+<p><strong>Security</strong> : In HTTP each files is downloaded from an independent connection and then gets closed. Due to this no more than one single element of a webpage gets transferred. Therefore, the chance of interception during transmission is minimized here.</p>
+</li>
+<li>
+<p><strong>Latency</strong> : Only when the connection is established, the handshaking process will take place in HTTP. Hence, there will be no handshaking procedure following a request. This significantly reduces latency in the connection.</p>
+</li>
+<li>
+<p><strong>Accessibility</strong> : When the page is loaded for the first time, all of the HTTP pages gets stored inside the internet caches known as the page cache. Therefore, once the page is visited again, the content is loaded quickly.</p>
+</li>
+</ol>
+<h4 id="disadvantages-of-http">Disadvantages of HTTP</h4>
+<ol>
+<li>
+<p><strong>Data Integrity</strong> : Since there are no any encryption methods used in HTTP, there are chances of someone altering the content. That is the reason why HTTP is considered to be an insecure method prone to data integrity.</p>
+</li>
+<li>
+<p><strong>Data Privacy</strong> : Privacy is another problem faced in a HTTP connection. If any hacker manages to intercept the request they can view all the content present in the web page. Besides that they can also gather confidential informations such as the username and the password.</p>
+</li>
+<li>
+<p><strong>Server Availability</strong> : Even if HTTP receives all the data that it needs, clients does not take measures to close the connection. Therefore, during this time period, server will not be present.</p>
+</li>
+<li>
+<p><strong>Administrative Overhead</strong> : For transmitting a web page, a HTTP needs to create multiple connections. This causes administrative overhead in the connection.</p>
+</li>
+<li>
+<p><strong>IoT Device Support</strong> : HTTP uses more number of system resources which leads to more power consumption. Since IoT device today contain wireless sensor networks, it is not suitable to use HTTP.</p>
+</li>
+</ol>
+<h2 id="http-parameters">HTTP Parameters</h2>
+<p>In this section, we will discuss various HTTP parameters and their syntax. For example, date and time format, character set, etc. These parameters are used in the construction of our request and response message while writing the HTTP program of the client or server.</p>
+<p>The various parameters of HTTP are as follows:</p>
+<ul>
+<li><a href="#http-version"><strong>HTTP Version</strong></a></li>
+<li><a href="#uniform-resource-identifiers"><strong>Uniform Resource Identifiers</strong></a></li>
+<li><a href="#date-or-time-formats"><strong>Date/Time Formats</strong></a></li>
+<li><a href="#character-sets"><strong>Character Sets</strong></a></li>
+<li><a href="#content-encodings"><strong>Content Encodings</strong></a></li>
+<li><a href="#media-types"><strong>Media Types</strong></a></li>
+<li><a href="#language-tags"><strong>Language Tags</strong></a></li>
+</ul>
+<h4 id="http-version">HTTP Version</h4>
+<p>HTTP uses a <strong><!-- raw HTML omitted --></strong>.<strong><!-- raw HTML omitted --></strong> numbering scheme to indicate versions of the protocol. The version of an HTTP message is indicated by an HTTP-Version field in the first line.</p>
+<p>Syntax:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>HTTP-Version   = &#34;HTTP&#34; &#34;/&#34; 1*DIGIT &#34;.&#34; 1*DIGIT
+</span></span></code></pre></div><p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>HTTP/1.0
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>or
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>HTTP/1.1
+</span></span></code></pre></div><h4 id="uniform-resource-identifiers">Uniform Resource Identifiers</h4>
+<p>Uniform Resource Identifiers (URI) are simply formatted, case-insensitive string containing name, location, etc. to identify a resource, for example, a website, a web service, etc.</p>
+<p>Syntax:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>URI = &#34;http:&#34; &#34;//&#34; host [ &#34;:&#34; port ] [ abs_path [ &#34;?&#34; query ]]
+</span></span></code></pre></div><ul>
+<li>&ldquo;http&rdquo; scheme is used to locate network resources through the HTTP protocol.</li>
+<li>Here if the port is empty or not given, port 80 is assumed for HTTP and an empty abs path is equivalent to an abs_path of &ldquo;/&rdquo;. The characters other than those in the reserved and unsafe sets are equivalent to their &ldquo;&rdquo;%&quot; HEX HEX&quot; encoding.</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>http://abc.com:80/~smith/home.html
+</span></span><span style="display:flex;"><span>http://ABC.com/%7Esmith/home.html
+</span></span><span style="display:flex;"><span>http://ABC.com:/%7esmith/home.html
+</span></span></code></pre></div><h4 id="date-or-time-formats">Date or Time Formats</h4>
+<ul>
+<li>All HTTP date/time stamps MUST be represented in Greenwich Mean Time (GMT), without exception.</li>
+<li>HTTP applications are allowed to use any of the following three representations of date/time stamps:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Sun, 06 Nov 1994 08:49:37 GMT  ; RFC 822, updated by RFC 1123
+</span></span><span style="display:flex;"><span>Sunday, 06-Nov-94 08:49:37 GMT ; RFC 850, obsoleted by RFC 1036
+</span></span><span style="display:flex;"><span>Sun Nov  6 08:49:37 1994       ; ANSI C&#39;s asctime() format
+</span></span></code></pre></div><h4 id="character-sets">Character Sets</h4>
+<p>We use character sets to specify the character sets that the client prefers. Multiple character sets can be listed separated by commas. If a value is not specified, the default is the US-ASCII</p>
+<p>Example:</p>
+<p>Following are the valid character sets:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>US-ASCII
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>or
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ISO-8859-1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>or 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ISO-8859-7
+</span></span></code></pre></div><h4 id="content-encodings">Content Encodings</h4>
+<p>A content encoding value indicates that an encoding algorithm has been used to encode the content before passing it over the network. Content coding are primarily used to allow a document to be compressed or otherwise usefully transformed without losing the identity.</p>
+<p>All content-coding values are case-insensitive. HTTP/1.1 uses content-coding values in the Accept-Encoding and Content-Encoding header fields which we will see in the subsequent chapters.</p>
+<p>Example:</p>
+<p>Following are the valid encoding schemes</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Accept-encoding: gzip
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>or
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Accept-encoding: compress
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>or 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Accept-encoding: deflate
+</span></span></code></pre></div><h4 id="media-types">Media Types</h4>
+<p>HTTP uses Internet Media Types in the Content-Type and Accept header fields in order to provide open and extensible data typing and type negotiation. All the Media-type values are registered with the Internet Assigned Number Authority (IANA).</p>
+<p>The general syntax to specify media type is as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>media-type     = type &#34;/&#34; subtype *( &#34;;&#34; parameter )
+</span></span></code></pre></div><p>The type, subtype, and parameter attribute names are case&ndash;insensitive.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Accept: image/gif
+</span></span></code></pre></div><h4 id="language-tags">Language Tags</h4>
+<p>HTTP uses language tags within the Accept-Language and Content-Language fields. A language tag is composed of one or more parts: a primary language tag and a possibly empty series of subtags:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>language-tag  = primary-tag *( &#34;-&#34; subtag )
+</span></span></code></pre></div><p>White spaces are not allowed within the tag and all tags are case- insensitive.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>en, en-US, en-cockney, i-cherokee, x-pig-latin
+</span></span></code></pre></div><h2 id="working-of-web">Working of Web</h2>
+<p>The browser sends an HTTP request message to the server, asking it to send a copy of the website to the client and server send back HTTP response message to browser.</p>
+<p>This message, and all other data sent between the client and the server, is sent across your internet connection using TCP/IP.</p>
+<p><img src="/images-http/working-of-web.png" alt="image working-of-web"></p>
+<h2 id="http-messages">HTTP Messages</h2>
+<p>HTTP Message is used to show how data is exchanged between the client and the server. It is based on client-server architecture. An HTTP client is a program that establishes a connection to a server to send one or more HTTP request messages. An HTTP server is a program that accepts connections to serve HTTP requests by sending an HTTP response messages.</p>
+<p>The HTTP Messages can be classified as follows:</p>
+<ul>
+<li><a href="#media-types"><strong>Message Type</strong></a></li>
+<li><a href="#message-headers"><strong>Message Headers</strong></a></li>
+<li><a href="#message-body"><strong>Message Body</strong></a></li>
+<li><a href="#message-length"><strong>Message Length</strong></a></li>
+<li><a href="#general-header-fields"><strong>General Header Fields</strong></a></li>
+</ul>
+<h4 id="message-type">Message Type</h4>
+<p>HTTP message consists of an initial request line and an initial response line.</p>
+<p>Format:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>HTTP-message = Request | Response ; HTTP/1.1 messages  
+</span></span></code></pre></div><p><strong>Initial Request Line</strong></p>
+<p>The initial line is different for the request and for the response. A request-line consists of three parts: a method name, requested resource&rsquo;s local path, and the HTTP version being used. All these parts are separated by spaces.</p>
+<p>Syntax:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>GET /path/to/file/index.html HTTP/1.0 
+</span></span></code></pre></div><ul>
+<li>GET is the most common HTTP method.</li>
+<li>The path shows the part of the URL after the host name. It is also called a request URI.</li>
+<li>The version of HTTP always takes the form “HTTP/x.x”, uppercase.</li>
+</ul>
+<p><img src="/images-http/http-message1.png" alt="image request"></p>
+<p><strong>Initial Response Line</strong></p>
+<p>The initial Response line is also known as the status line. It also has three parts: the HTTP version, a response status code that gives the result of the request, and the English reason phrase describing the status code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>HTTP/1.0 200 OK  
+</span></span><span style="display:flex;"><span>or  
+</span></span><span style="display:flex;"><span>HTTP/1.0 404 Not Found
+</span></span></code></pre></div><p><img src="/images-http/http-message2.png" alt="image request"></p>
+<h4 id="message-headers">Message Headers</h4>
+<p>The Message header provides information about the request and response. It also provides information about the object which is sent in the message body. Message Headers are of four types:</p>
+<ul>
+<li><strong>General Header</strong>: It has general applicability for both request messages and response messages.</li>
+<li><strong>Request Header</strong>: It has applicability only for the request messages.</li>
+<li><strong>Response Header</strong>: It has applicability only for the response messages.</li>
+<li><strong>Entity Header</strong>: It defines meta-information about the entity-body, and about the resource identified by request.</li>
+</ul>
+<p>All the above headers follow the same generic format. Each of the header fields consists of a name followed by a colon and the field values as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>message-header = field-name &#34;:&#34; [ field-value ]  
+</span></span></code></pre></div><h4 id="message-body">Message Body</h4>
+<p>The message body of an HTTP message is used to carry the entire body associated with the request and response. The message-body differs from the entire-body only when a transfer-coding has been applied, as indicated by the Transfer-Encoding header field.</p>
+<p>Syntax</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>message-body = entity-body  
+</span></span><span style="display:flex;"><span>        | &lt;<span style="color:#f92672">entity-body</span> <span style="color:#a6e22e">encoded</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">per</span> <span style="color:#a6e22e">Transfer-Encoding</span>&gt; 
+</span></span></code></pre></div><p>Transfer-Encoding MUST be used to indicate any transfer-codings which is applied by an application to ensure safe and proper transfer of the message. Transfer-Encoding is a property of the message.</p>
+<h4 id="message-length">Message Length</h4>
+<p>The transfer-length of a message is the length of the message-body, and it appears in the message.</p>
+<p>In a message, when a message body is allowed, and Content-Length is given, its field value MUST exactly match the number of OCTETs in the message-body. When an invalid length is received and detected, the HTTP/1.1 user agents MUST notify the user.</p>
+<h4 id="general-header-fields">General Header Fields</h4>
+<p>Some header fields have the applicability for both the request and response messages. These header fields apply only when the message is transmitted.</p>
+<p>Syntax</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>general-header = Cache-Control 
+</span></span></code></pre></div><h2 id="http-request">HTTP Request</h2>
+<p>An HTTP client sends an HTTP request to a server in the form of a request message which includes following format:</p>
+<blockquote>
+<ul>
+<li>A Request Line</li>
+<li>Zero or more header(General,Request,Entity) fields followed by CRLF</li>
+<li>An empty line (i.e., a line with nothing preceding the CRLF) indicating the end of the header fields</li>
+<li>Optionally a message-body</li>
+</ul>
+</blockquote>
+<p><strong>Syntax</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Request  = Request-Line                
+</span></span><span style="display:flex;"><span>        *(( general-header        
+</span></span><span style="display:flex;"><span>        | request-header           
+</span></span><span style="display:flex;"><span>        | entity-header ) CRLF)    
+</span></span><span style="display:flex;"><span>        CRLF  
+</span></span><span style="display:flex;"><span>        [ message-body ] 
+</span></span></code></pre></div><ul>
+<li><a href="#request-line"><strong>Request Line</strong></a></li>
+<li><a href="#request-method"><strong>Request Method</strong></a></li>
+<li><a href="#request-uri"><strong>Request-URI</strong></a></li>
+<li><a href="#request-header-fields"><strong>Request Header Fields</strong></a></li>
+<li><a href="#http-request-examples"><strong>Examples</strong></a></li>
+</ul>
+<h4 id="request-line">Request Line</h4>
+<p>The Request-Line starts with a method token, which is followed by the Request-URI, the protocol version, and ending with CRLF. Using the SP characters, the elements are separated.</p>
+<p><strong>Syntax</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Request-Line   = Method SP Request-URI SP HTTP-Version CRLF 
+</span></span></code></pre></div><h4 id="request-method">Request Method</h4>
+<p>The request method indicates the method to be performed on the resource identified by the given Request-URI. The method is case-sensitive and should always be mentioned in uppercase. The following table lists all the supported methods in HTTP/1.1.</p>
+<table>
+<thead>
+<tr>
+<th><strong><em>Sl No</em></strong></th>
+<th><strong><em>Method</em></strong></th>
+<th><strong><em>Description</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>GET</td>
+<td>The GET method is used to retrieve information from the given server using a given URI. Requests using GET should only retrieve data and should have no other effect on the data.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>HEAD</td>
+<td>Same as GET, but it transfers the status line and the header section only.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>POST</td>
+<td>A POST request is used to send data to the server, for example, customer information, file upload, etc. using HTML forms.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>PUT</td>
+<td>Replaces all the current representations of the target resource with the uploaded content.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>DELETE</td>
+<td>Removes all the current representations of the target resource given by URI.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>CONNECT</td>
+<td>Establishes a tunnel to the server identified by a given URI.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>OPTIONS</td>
+<td>Describe the communication options for the target resource.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>TRACE</td>
+<td>Performs a message loop back test along with the path to the target resource.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="request-uri">Request URI</h4>
+<p>The Request-URI is a <strong>Uniform Resource Identifier</strong> and identifies the resource upon which to apply the request. Following are the most commonly used forms to specify an URI:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Request-URI = &#34;*&#34; | absoluteURI | abs_path | authority
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th><strong><em>Method</em></strong></th>
+<th><strong><em>Description</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>asterisk &ldquo;*&rdquo;</td>
+<td>The asterisk star is used to show that the request does not apply to a particular resource, but it will apply to the server itself. It is allowed only when the method used does not necessarily apply to a resource. Example: OPTIONS * HTTP/1.1</td>
+</tr>
+<tr>
+<td>absoluteURI</td>
+<td>The absoluteURI form is used only when the request is being made to a proxy. The requested proxy is used to forward the request and return the response. Example : GET <a href="http://swayaan.com/">http://swayaan.com/</a> HTTP/1.1</td>
+</tr>
+<tr>
+<td>absolute path</td>
+<td>The absolute path can&rsquo;t be empty. If in the original URI, none is present, it must be given as &ldquo;/&rdquo;</td>
+</tr>
+<tr>
+<td>authority</td>
+<td>The authority form is only used by the CONNECT method.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="request-header-fields">Request Header Fields</h4>
+<p>This request-header field allows the client to pass additional information to the server, including the request and the client.The request header fields function as request modifiers, with semantics similar to the parameters of a method invocation in a programming language.</p>
+<p>Syntax</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>request-header = Accept                     
+</span></span><span style="display:flex;"><span>                      | Accept-Charset            
+</span></span><span style="display:flex;"><span>                      | Accept-Encoding            
+</span></span><span style="display:flex;"><span>                      | Accept-Language            
+</span></span><span style="display:flex;"><span>                      | Authorization              
+</span></span><span style="display:flex;"><span>                      | Expect                    
+</span></span><span style="display:flex;"><span>                      | From                       
+</span></span><span style="display:flex;"><span>                      | Host                      
+</span></span><span style="display:flex;"><span>                      | If-Match                   
+</span></span><span style="display:flex;"><span>                      | If-Modified-Since        
+</span></span><span style="display:flex;"><span>                      | If-None-Match             
+</span></span><span style="display:flex;"><span>                      | If-Range                
+</span></span><span style="display:flex;"><span>                      | If-Unmodified-Since       
+</span></span><span style="display:flex;"><span>                      | Max-Forwards              
+</span></span><span style="display:flex;"><span>                      | Proxy-Authorization       
+</span></span><span style="display:flex;"><span>                      | Range                     
+</span></span><span style="display:flex;"><span>                      | Referer                   
+</span></span><span style="display:flex;"><span>                      | TE                        
+</span></span><span style="display:flex;"><span>                      | User-Agent  
+</span></span></code></pre></div><h4 id="http-request-examples">HTTP Request Examples</h4>
+<p>Now let&rsquo;s put it all together to form an HTTP request to fetch hello.htm page from the web</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>GET /hello.htm HTTP/1.1
+</span></span><span style="display:flex;"><span>User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+</span></span><span style="display:flex;"><span>Host: www.tutorialspoint.com
+</span></span><span style="display:flex;"><span>Accept-Language: en-us
+</span></span><span style="display:flex;"><span>Accept-Encoding: gzip, deflate
+</span></span><span style="display:flex;"><span>Connection: Keep-Alive
+</span></span></code></pre></div><h2 id="http-responses">HTTP Responses</h2>
+<p>After receiving and interpreting a request message, a server responds with an HTTP response message</p>
+<blockquote>
+<ul>
+<li>A Status-line</li>
+<li>Zero or more header (General,Response,Entity) fields followed by CRLF</li>
+<li>An empty line (i.e., a line with nothing preceding the CRLF) indicating the end of the header fields</li>
+<li>Optionally a message-body</li>
+</ul>
+</blockquote>
+<p>An HTTP response contains the following things:</p>
+<ul>
+<li><a href="#message-status-line"><strong>Status Line</strong></a></li>
+<li><a href="#response-header-fields"><strong>Response Header Fields or a series of HTTP headers</strong></a></li>
+<li><a href="#http-response-examples"><strong>Examples</strong></a></li>
+</ul>
+<h4 id="message-status-line">Message Status-Line</h4>
+<p>A Status-Line consists of the protocol version followed by a numeric status code and its associated textual phrase. The elements are separated by space SP characters.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Status-Line = HTTP-Version SP Status-Code SP Reason-Phrase CRLF
+</span></span></code></pre></div><p><strong>HTTP Version</strong></p>
+<p>A server supporting HTTP version 1.1 will return the following version information:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>HTTP-Version = HTTP/1.1
+</span></span></code></pre></div><p><strong>Status Code</strong></p>
+<p>The Status-Code element is a 3-digit integer where first digit of the Status-Code defines the class of response and the last two digits do not have any categorization role. There are 5 values for the first digit:</p>
+<table>
+<thead>
+<tr>
+<th><strong><em>Sl No</em></strong></th>
+<th><strong><em>Code</em></strong></th>
+<th><strong><em>Description</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1xx: Informational</td>
+<td>It means the request was received and the process is continuing.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2xx: Success</td>
+<td>It means the action was successfully received, understood, and accepted.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3xx: Redirection</td>
+<td>It means further action must be taken in order to complete the request.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4xx: Client Error</td>
+<td>It means the request contains incorrect syntax or cannot be fulfilled.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>5xx: Server Error</td>
+<td>It means the server failed to fulfill an apparently valid request.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response-header-fields">Response Header Fields</h4>
+<p>The HTTP Headers for the response of the server contain the information that a client can use to find out more about the response, and about the server that sent it. This information is used to assist the client with displaying the response to a user, with storing the response for the use of future, and with making further requests to the server now or in the future.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>response-header = Accept-Ranges            
+</span></span><span style="display:flex;"><span>                  | Age                     
+</span></span><span style="display:flex;"><span>                  | ETag                     
+</span></span><span style="display:flex;"><span>                  | Location                
+</span></span><span style="display:flex;"><span>                  | Proxy-Authenticate       
+</span></span><span style="display:flex;"><span>                  | Retry-After              
+</span></span><span style="display:flex;"><span>                  | Server             
+</span></span><span style="display:flex;"><span>                  | Vary                    
+</span></span><span style="display:flex;"><span>                  | WWW-Authenticate     
+</span></span></code></pre></div><h4 id="http-response-examples">HTTP Response Examples</h4>
+<p>Now let&rsquo;s put it all together to form an HTTP response for a request to fetch the hello.htm page from the web server</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>HTTP/1.1 200 OK
+</span></span><span style="display:flex;"><span>Date: Mon, 27 Jul 2009 12:28:53 GMT
+</span></span><span style="display:flex;"><span>Server: Apache/2.2.14 (Win32)
+</span></span><span style="display:flex;"><span>Last-Modified: Wed, 22 Jul 2009 19:15:56 GMT
+</span></span><span style="display:flex;"><span>Content-Length: 88
+</span></span><span style="display:flex;"><span>Content-Type: text/html
+</span></span><span style="display:flex;"><span>Connection: Closed
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-htm" data-lang="htm"><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h1</span>&gt;Hello, World!&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>The following example shows an HTTP response message displaying error condition when the web server could not find the requested page</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>HTTP/1.1 404 Not Found
+</span></span><span style="display:flex;"><span>Date: Sun, 18 Oct 2012 10:36:20 GMT
+</span></span><span style="display:flex;"><span>Server: Apache/2.2.14 (Win32)
+</span></span><span style="display:flex;"><span>Content-Length: 230
+</span></span><span style="display:flex;"><span>Connection: Closed
+</span></span><span style="display:flex;"><span>Content-Type: text/html; charset=iso-8859-1
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-htm" data-lang="htm"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE HTML PUBLIC &#34;-//IETF//DTD HTML 2.0//EN&#34;&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>   &lt;<span style="color:#f92672">title</span>&gt;404 Not Found&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>   &lt;<span style="color:#f92672">h1</span>&gt;Not Found&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>   &lt;<span style="color:#f92672">p</span>&gt;The requested URL /t.html was not found on this server.&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><h2 id="http-methods">HTTP Methods</h2>
+<p>For HTTP/1.1, the set of common methods are defined below. This set can be expanded based on the requirements. The name of these methods is case sensitive, and they must be used in uppercase.</p>
+<table>
+<thead>
+<tr>
+<th><strong><em>Method</em></strong></th>
+<th><strong><em>Description</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#get-method"><strong>GET</strong></a></td>
+<td>The GET method is used to retrieve information from the given server using a given URI. Requests using GET should only retrieve data and should have no other effect on the data.</td>
+</tr>
+<tr>
+<td><a href="#head-method"><strong>HEAD</strong></a></td>
+<td>Same as GET, but it transfers the status line and the header section only.</td>
+</tr>
+<tr>
+<td><a href="#post-method"><strong>POST</strong></a></td>
+<td>A POST request is used to send data to the server, for example, customer information, file upload, etc. using HTML forms.</td>
+</tr>
+<tr>
+<td><a href="#put-method"><strong>PUT</strong></a></td>
+<td>Replaces all the current representations of the target resource with the uploaded content.</td>
+</tr>
+<tr>
+<td><a href="#delete-method"><strong>DELETE</strong></a></td>
+<td>Removes all the current representations of the target resource given by URI.</td>
+</tr>
+<tr>
+<td><a href="#connect-method"><strong>CONNECT</strong></a></td>
+<td>Establishes a tunnel to the server identified by a given URI.</td>
+</tr>
+<tr>
+<td><a href="#options-method"><strong>OPTIONS</strong></a></td>
+<td>Describe the communication options for the target resource.</td>
+</tr>
+<tr>
+<td><a href="#trace-method"><strong>TRACE</strong></a></td>
+<td>Performs a message loop back test along with the path to the target resource.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="get-method">GET Method</h4>
+<p>A GET request retrieves data from a web server by specifying parameters in the URL portion of the request. This is the main method used for document retrieval. The following example makes use of GET method to fetch hello.htm:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>GET /hello.htm HTTP/1.1
+</span></span><span style="display:flex;"><span>User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+</span></span><span style="display:flex;"><span>Host: www.tutorialspoint.com
+</span></span><span style="display:flex;"><span>Accept-Language: en-us
+</span></span><span style="display:flex;"><span>Accept-Encoding: gzip, deflate
+</span></span><span style="display:flex;"><span>Connection: Keep-Alive
+</span></span></code></pre></div><p>The server response against the above GET request will be as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>HTTP/1.1 200 OK
+</span></span><span style="display:flex;"><span>Date: Mon, 27 Jul 2009 12:28:53 GMT
+</span></span><span style="display:flex;"><span>Server: Apache/2.2.14 (Win32)
+</span></span><span style="display:flex;"><span>Last-Modified: Wed, 22 Jul 2009 19:15:56 GMT
+</span></span><span style="display:flex;"><span>ETag: &#34;34aa387-d-1568eb00&#34;
+</span></span><span style="display:flex;"><span>Vary: Authorization,Accept
+</span></span><span style="display:flex;"><span>Accept-Ranges: bytes
+</span></span><span style="display:flex;"><span>Content-Length: 88
+</span></span><span style="display:flex;"><span>Content-Type: text/html
+</span></span><span style="display:flex;"><span>Connection: Closed
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-htm" data-lang="htm"><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h1</span>&gt;Hello, World!&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><h4 id="head-method">HEAD Method</h4>
+<p>The HEAD method is functionally similar to GET, except that the server replies with a response line and headers, but no entity-body. The following example makes use of HEAD method to fetch header information about hello.htm:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>HEAD /hello.htm HTTP/1.1
+</span></span><span style="display:flex;"><span>User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+</span></span><span style="display:flex;"><span>Host: www.tutorialspoint.com
+</span></span><span style="display:flex;"><span>Accept-Language: en-us
+</span></span><span style="display:flex;"><span>Accept-Encoding: gzip, deflate
+</span></span><span style="display:flex;"><span>Connection: Keep-Alive
+</span></span></code></pre></div><p>The server response against the above HEAD request will be as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>HTTP/1.1 200 OK
+</span></span><span style="display:flex;"><span>Date: Mon, 27 Jul 2009 12:28:53 GMT
+</span></span><span style="display:flex;"><span>Server: Apache/2.2.14 (Win32)
+</span></span><span style="display:flex;"><span>Last-Modified: Wed, 22 Jul 2009 19:15:56 GMT
+</span></span><span style="display:flex;"><span>ETag: &#34;34aa387-d-1568eb00&#34;
+</span></span><span style="display:flex;"><span>Vary: Authorization,Accept
+</span></span><span style="display:flex;"><span>Accept-Ranges: bytes
+</span></span><span style="display:flex;"><span>Content-Length: 88
+</span></span><span style="display:flex;"><span>Content-Type: text/html
+</span></span><span style="display:flex;"><span>Connection: Closed
+</span></span></code></pre></div><p>You can notice that here server the does not send any data after header.</p>
+<h4 id="post-method">POST Method</h4>
+<p>The POST method is used when you want to send some data to the server, for example, file update, form data, etc. The following example makes use of POST method to send a form data to the server, which will be processed by a process.cgi and finally a response will be returned:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>POST /cgi-bin/process.cgi HTTP/1.1
+</span></span><span style="display:flex;"><span>User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+</span></span><span style="display:flex;"><span>Host: www.tutorialspoint.com
+</span></span><span style="display:flex;"><span>Content-Type: text/xml; charset=utf-8
+</span></span><span style="display:flex;"><span>Content-Length: 88
+</span></span><span style="display:flex;"><span>Accept-Language: en-us
+</span></span><span style="display:flex;"><span>Accept-Encoding: gzip, deflate
+</span></span><span style="display:flex;"><span>Connection: Keep-Alive
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-htm" data-lang="htm"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">string</span> <span style="color:#a6e22e">xmlns</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://clearforest.com/&#34;</span>&gt;string&lt;/<span style="color:#f92672">string</span>&gt;
+</span></span></code></pre></div><p>The server side script process.cgi processes the passed data and sends the following response:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>HTTP/1.1 200 OK
+</span></span><span style="display:flex;"><span>Date: Mon, 27 Jul 2009 12:28:53 GMT
+</span></span><span style="display:flex;"><span>Server: Apache/2.2.14 (Win32)
+</span></span><span style="display:flex;"><span>Last-Modified: Wed, 22 Jul 2009 19:15:56 GMT
+</span></span><span style="display:flex;"><span>ETag: &#34;34aa387-d-1568eb00&#34;
+</span></span><span style="display:flex;"><span>Vary: Authorization,Accept
+</span></span><span style="display:flex;"><span>Accept-Ranges: bytes
+</span></span><span style="display:flex;"><span>Content-Length: 88
+</span></span><span style="display:flex;"><span>Content-Type: text/html
+</span></span><span style="display:flex;"><span>Connection: Closed
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-htm" data-lang="htm"><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h1</span>&gt;Request Processed Successfully&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><h4 id="put-method">PUT Method</h4>
+<p>The PUT method is used to request the server to store the included entity-body at a location specified by the given URL. The following example requests the server to save the given entity-body in hello.htm at the root of the server:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>PUT /hello.htm HTTP/1.1
+</span></span><span style="display:flex;"><span>User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+</span></span><span style="display:flex;"><span>Host: www.tutorialspoint.com
+</span></span><span style="display:flex;"><span>Accept-Language: en-us
+</span></span><span style="display:flex;"><span>Connection: Keep-Alive
+</span></span><span style="display:flex;"><span>Content-type: text/html
+</span></span><span style="display:flex;"><span>Content-Length: 182
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-htm" data-lang="htm"><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h1</span>&gt;Hello, World!&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>The server will store the given entity-body in hello.htm file and will send the following response back to the client:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>HTTP/1.1 201 Created
+</span></span><span style="display:flex;"><span>Date: Mon, 27 Jul 2009 12:28:53 GMT
+</span></span><span style="display:flex;"><span>Server: Apache/2.2.14 (Win32)
+</span></span><span style="display:flex;"><span>Content-type: text/html
+</span></span><span style="display:flex;"><span>Content-length: 30
+</span></span><span style="display:flex;"><span>Connection: Closed
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-htm" data-lang="htm"><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h1</span>&gt;The file was created.&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><h4 id="delete-method">DELETE Method</h4>
+<p>The DELETE method is used to request the server to delete a file at a location specified by the given URL. The following example requests the server to delete the given file hello.htm at the root of the server:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>DELETE /hello.htm HTTP/1.1
+</span></span><span style="display:flex;"><span>User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+</span></span><span style="display:flex;"><span>Host: www.tutorialspoint.com
+</span></span><span style="display:flex;"><span>Accept-Language: en-us
+</span></span><span style="display:flex;"><span>Connection: Keep-Alive
+</span></span></code></pre></div><p>The server will delete the mentioned file hello.htm and will send the following response back to the client:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>HTTP/1.1 200 OK
+</span></span><span style="display:flex;"><span>Date: Mon, 27 Jul 2009 12:28:53 GMT
+</span></span><span style="display:flex;"><span>Server: Apache/2.2.14 (Win32)
+</span></span><span style="display:flex;"><span>Content-type: text/html
+</span></span><span style="display:flex;"><span>Content-length: 30
+</span></span><span style="display:flex;"><span>Connection: Closed
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-htm" data-lang="htm"><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h1</span>&gt;URL deleted.&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><h4 id="connect-method">CONNECT Method</h4>
+<p>The CONNECT method is used by the client to establish a network connection to a web server over HTTP. The following example requests a connection with a web server</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>CONNECT www.tutorialspoint.com HTTP/1.1
+</span></span><span style="display:flex;"><span>User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+</span></span></code></pre></div><p>The connection is established with the server and the following response is sent back to the client:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>HTTP/1.1 200 Connection established
+</span></span><span style="display:flex;"><span>Date: Mon, 27 Jul 2009 12:28:53 GMT
+</span></span><span style="display:flex;"><span>Server: Apache/2.2.14 (Win32)
+</span></span></code></pre></div><h4 id="options-method">OPTIONS Method</h4>
+<p>The OPTIONS method is used by the client to find out the HTTP methods and other options supported by a web server. The client can specify a URL for the OPTIONS method, or an asterisk (*) to refer to the entire server. The following example requests a list of methods supported by a web server running on tutorialspoint.com:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>OPTIONS * HTTP/1.1
+</span></span><span style="display:flex;"><span>User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+</span></span></code></pre></div><p>The server will send an information based on the current configuration of the server, for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>HTTP/1.1 200 OK
+</span></span><span style="display:flex;"><span>Date: Mon, 27 Jul 2009 12:28:53 GMT
+</span></span><span style="display:flex;"><span>Server: Apache/2.2.14 (Win32)
+</span></span><span style="display:flex;"><span>Allow: GET,HEAD,POST,OPTIONS,TRACE
+</span></span><span style="display:flex;"><span>Content-Type: httpd/unix-directory
+</span></span></code></pre></div><h4 id="trace-method">TRACE Method</h4>
+<p>The TRACE method is used to echo the contents of an HTTP Request back to the requester which can be used for debugging purpose at the time of development. The following example shows the usage of TRACE method:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>TRACE / HTTP/1.1
+</span></span><span style="display:flex;"><span>Host: www.tutorialspoint.com
+</span></span><span style="display:flex;"><span>User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+</span></span></code></pre></div><p>The server will send the following message in response to the above request:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>HTTP/1.1 200 OK
+</span></span><span style="display:flex;"><span>Date: Mon, 27 Jul 2009 12:28:53 GMT
+</span></span><span style="display:flex;"><span>Server: Apache/2.2.14 (Win32)
+</span></span><span style="display:flex;"><span>Connection: close
+</span></span><span style="display:flex;"><span>Content-Type: message/http
+</span></span><span style="display:flex;"><span>Content-Length: 39
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>TRACE / HTTP/1.1
+</span></span><span style="display:flex;"><span>Host: www.tutorialspoint.com
+</span></span><span style="display:flex;"><span>User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+</span></span></code></pre></div><h2 id="http-status-codes">HTTP Status Codes</h2>
+<p>The Status-Code element in a server response, is a 3-digit integer where the first digit of the Status-Code defines the class of response and the last two digits do not have any categorization role. There are 5 values for the first digit</p>
+<table>
+<thead>
+<tr>
+<th><strong><em>Code</em></strong></th>
+<th><strong><em>Description</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#1xx-information"><strong>1xx: Informational</strong></a></td>
+<td>It means the request has been received and the process is continuing.</td>
+</tr>
+<tr>
+<td><a href="#2xx-success"><strong>2xx: Success</strong></a></td>
+<td>It means the action was successfully received, understood, and accepted.</td>
+</tr>
+<tr>
+<td><a href="#3xx-redirection"><strong>3xx: Redirection</strong></a></td>
+<td>It means further action must be taken in order to complete the request.</td>
+</tr>
+<tr>
+<td><a href="#4xx-client-error"><strong>4xx: Client Error</strong></a></td>
+<td>It means the request contains incorrect syntax or cannot be fulfilled.</td>
+</tr>
+<tr>
+<td><a href="#5xx-server-error"><strong>5xx: Server Error</strong></a></td>
+<td>It means the server failed to fulfill an apparently valid request.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1xx-information">1xx Information</h4>
+<table>
+<thead>
+<tr>
+<th><strong><em>Message</em></strong></th>
+<th><strong><em>Description</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100 Continue</td>
+<td>Only a part of the request has been received by the server, but as long as it has not been rejected, the client should continue with the request.</td>
+</tr>
+<tr>
+<td>101 Switching Protocols</td>
+<td>The server switches protocol.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2xx-success">2xx Success</h4>
+<table>
+<thead>
+<tr>
+<th><strong><em>Message</em></strong></th>
+<th><strong><em>Description</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200 OK</td>
+<td>The request is OK.</td>
+</tr>
+<tr>
+<td>201 Created</td>
+<td>The request is complete, and a new resource is created .</td>
+</tr>
+<tr>
+<td>202 Accepted</td>
+<td>The request is accepted for processing, but the processing is not complete.</td>
+</tr>
+<tr>
+<td>203 Non-authoritative Information</td>
+<td>The information in the entity header is from a local or third-party copy, not from the original server.</td>
+</tr>
+<tr>
+<td>204 No Content</td>
+<td>A status code and a header are given in the response, but there is no entity-body in the reply.</td>
+</tr>
+<tr>
+<td>205 Reset Content</td>
+<td>The browser should clear the form used for this transaction for additional input.</td>
+</tr>
+<tr>
+<td>206 Partial Content</td>
+<td>The server is returning partial data of the size requested. Used in response to a request specifying a Range header. The server must specify the range included in the response with the Content-Range header.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="3xx-redirection">3xx Redirection</h4>
+<table>
+<thead>
+<tr>
+<th><strong><em>Message</em></strong></th>
+<th><strong><em>Description</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>300 Multiple Choices</td>
+<td>A link list. The user can select a link and go to that location. Maximum five addresses  .</td>
+</tr>
+<tr>
+<td>301 Moved Permanently</td>
+<td>The requested page has moved to a new url .</td>
+</tr>
+<tr>
+<td>302 Found</td>
+<td>The requested page has moved temporarily to a new url .</td>
+</tr>
+<tr>
+<td>303 See Other</td>
+<td>The requested page can be found under a different url .</td>
+</tr>
+<tr>
+<td>304 Not Modified</td>
+<td>This is the response code to an If-Modified-Since or If-None-Match header, where the URL has not been modified since the specified date.</td>
+</tr>
+<tr>
+<td>305 Use Proxy</td>
+<td>The requested URL must be accessed through the proxy mentioned in the Location header.</td>
+</tr>
+<tr>
+<td>306 Unused</td>
+<td>This code was used in a previous version. It is no longer used, but the code is reserved.</td>
+</tr>
+<tr>
+<td>307 Temporary Redirect</td>
+<td>The requested page has moved temporarily to a new url.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="4xx-client-error">4xx Client Error</h4>
+<table>
+<thead>
+<tr>
+<th><strong><em>Message</em></strong></th>
+<th><strong><em>Description</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400 Bad Request</td>
+<td>The server did not understand the request.</td>
+</tr>
+<tr>
+<td>401 Unauthorized</td>
+<td>The requested page needs a username and a password.</td>
+</tr>
+<tr>
+<td>402 Payment Required</td>
+<td>You can not use this code yet.</td>
+</tr>
+<tr>
+<td>403 Forbidden</td>
+<td>Access is forbidden to the requested page.</td>
+</tr>
+<tr>
+<td>404 Not Found</td>
+<td>The server can not find the requested page.</td>
+</tr>
+<tr>
+<td>405 Method Not Allowed</td>
+<td>The method specified in the request is not allowed.</td>
+</tr>
+<tr>
+<td>406 Not Acceptable</td>
+<td>The server can only generate a response that is not accepted by the client.</td>
+</tr>
+<tr>
+<td>407 Proxy Authentication Required</td>
+<td>You must authenticate with a proxy server before this request can be served.</td>
+</tr>
+<tr>
+<td>408 Request Timeout</td>
+<td>The request took longer than the server was prepared to wait.</td>
+</tr>
+<tr>
+<td>409 Conflict</td>
+<td>The request could not be completed because of a conflict.</td>
+</tr>
+<tr>
+<td>410 Gone</td>
+<td>The requested page is no longer available .</td>
+</tr>
+<tr>
+<td>411 Length Required</td>
+<td>The &ldquo;Content-Length&rdquo; is not defined. The server will not accept the request without it .</td>
+</tr>
+<tr>
+<td>412 Precondition Failed</td>
+<td>The pre condition given in the request evaluated to false by the server.</td>
+</tr>
+<tr>
+<td>413 Request Entity Too Large</td>
+<td>The server will not accept the request, because the request entity is too large.</td>
+</tr>
+<tr>
+<td>414 Request-url Too Long</td>
+<td>The server will not accept the request, because the url is too long. Occurs when you convert a &ldquo;post&rdquo; request to a &ldquo;get&rdquo; request with a long query information .</td>
+</tr>
+<tr>
+<td>415 Unsupported Media Type</td>
+<td>The server will not accept the request, because the mediatype is not supported .</td>
+</tr>
+<tr>
+<td>416 Requested Range Not Satisfiable</td>
+<td>The requested byte range is not available and is out of bounds.</td>
+</tr>
+<tr>
+<td>417 Expectation Failed</td>
+<td>The expectation given in an Expect request-header field could not be met by this server.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="5xx-server-error">5xx Server Error</h4>
+<table>
+<thead>
+<tr>
+<th><strong><em>Message</em></strong></th>
+<th><strong><em>Description</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>500 Internal Server Error</td>
+<td>The request was not completed. The server met an unexpected condition.</td>
+</tr>
+<tr>
+<td>501 Not Implemented</td>
+<td>The request was not completed. The server did not support the functionality required.</td>
+</tr>
+<tr>
+<td>502 Bad Gateway</td>
+<td>The request was not completed. The server received an invalid response from the upstream server.</td>
+</tr>
+<tr>
+<td>503 Service Unavailable</td>
+<td>The request was not completed. The server is temporarily overloading or down.</td>
+</tr>
+<tr>
+<td>504 Gateway Timeout</td>
+<td>The gateway has timed out.</td>
+</tr>
+<tr>
+<td>505 HTTP Version Not Supported</td>
+<td>The server does not support the &ldquo;http protocol&rdquo; version.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="http-header-fields">HTTP Header Fields</h2>
+<p>HTTP header fields provide required information about the request or response, or about the object sent in the message body. There are four types of HTTP message headers:</p>
+<ul>
+<li><a href="#general-headers"><strong>General-header</strong></a>: These header fields have general applicability for both request and response messages.</li>
+<li><a href="#client-request-header"><strong>Client Request-header</strong></a>: These header fields have applicability only for request messages.</li>
+<li><a href="#server-response-headers"><strong>Server Response-header</strong></a>: These header fields have applicability only for response messages.</li>
+<li><a href="#entity-headers"><strong>Entity-header</strong></a>: These header fields define meta information about the entity-body or, if no body is present, about the resource identified by the request.</li>
+</ul>
+<h4 id="general-headers">General Headers</h4>
+<p><strong>Cache-Control</strong></p>
+<p>The Cache-Control general-header field is used to specify directives that MUST be obeyed by all the caching system. The syntax is as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Cache-Control : cache-request-directive|cache-response-directive
+</span></span></code></pre></div><p>An HTTP client or server can use the Cache-control general header to specify parameters for the cache or to request certain kinds of documents from the cache. The caching directives are specified in a comma-separated list. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Cache-control: no-cache
+</span></span></code></pre></div><p>The following table lists the important cache request directives that can be used by the client in its HTTP request</p>
+<table>
+<thead>
+<tr>
+<th><strong><em>Cache Request Directive</em></strong></th>
+<th><strong><em>Description</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>no-cache</td>
+<td>A cache must not use the response to satisfy a subsequent request without successful revalidation with the origin server.</td>
+</tr>
+<tr>
+<td>no-store</td>
+<td>The cache should not store anything about the client request or server response.</td>
+</tr>
+<tr>
+<td>max-age = seconds</td>
+<td>Indicates that the client is willing to accept a response whose age is not greater than the specified time in seconds.</td>
+</tr>
+<tr>
+<td>max-stale [ = seconds ]</td>
+<td>Indicates that the client is willing to accept a response that has exceeded its expiration time. If seconds are given, it must not be expired by more than that time.</td>
+</tr>
+<tr>
+<td>min-fresh = seconds</td>
+<td>Indicates that the client is willing to accept a response whose freshness lifetime is not less than its current age plus the specified time in seconds.</td>
+</tr>
+<tr>
+<td>no-transform</td>
+<td>Does not convert the entity-body.</td>
+</tr>
+<tr>
+<td>only-if-cached</td>
+<td>Does not retrieve new data. The cache can send a document only if it is in the cache, and should not contact the origin-server to see if a newer copy exists.</td>
+</tr>
+</tbody>
+</table>
+<p>The following important cache response directives that can be used by the server in its HTTP response</p>
+<table>
+<thead>
+<tr>
+<th><strong><em>Cache Response Directive</em></strong></th>
+<th><strong><em>Description</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>public</td>
+<td>Indicates that the response may be cached by any cache.</td>
+</tr>
+<tr>
+<td>private</td>
+<td>Indicates that all or part of the response message is intended for a single user and must not be cached by a shared cache</td>
+</tr>
+<tr>
+<td>no-cache</td>
+<td>A cache must not use the response to satisfy a subsequent request without successful re-validation with the origin server.</td>
+</tr>
+<tr>
+<td>no-store</td>
+<td>The cache should not store anything about the client request or server response.</td>
+</tr>
+<tr>
+<td>no-transform</td>
+<td>Does not convert the entity-body.</td>
+</tr>
+<tr>
+<td>must-revalidate</td>
+<td>The cache must verify the status of the stale documents before using it and expired ones should not be used.</td>
+</tr>
+<tr>
+<td>proxy-revalidate</td>
+<td>The proxy-revalidate directive has the same meaning as the must- revalidate directive, except that it does not apply to non-shared user agent caches.</td>
+</tr>
+<tr>
+<td>max-age = seconds</td>
+<td>Indicates that the client is willing to accept a response whose age is not greater than the specified time in seconds.</td>
+</tr>
+<tr>
+<td>s-maxage = seconds</td>
+<td>The maximum age specified by this directive overrides the maximum age specified by either the max-age directive or the Expires header. The s-maxage directive is always ignored by a private cache.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Connection</strong></p>
+<p>The Connection general-header field allows the sender to specify options that are desired for that particular connection and must not be communicated by proxies over further connections. Following is the simple syntax for using connection header:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Connection : &#34;Connection&#34;
+</span></span></code></pre></div><p>HTTP/1.1 defines the &ldquo;close&rdquo; connection option for the sender to signal that the connection will be closed after completion of the response. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Connection: close
+</span></span></code></pre></div><p>By default, HTTP 1.1 uses persistent connections, where the connection does not automatically close after a transaction. HTTP 1.0, on the other hand, does not have persistent connections by default. If a 1.0 client wishes to use persistent connections, it uses the keep-alive parameter as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Connection: keep-alive
+</span></span></code></pre></div><p><strong>Date</strong></p>
+<p>All HTTP date/time stamps MUST be represented in Greenwich Mean Time (GMT), without exception. HTTP applications are allowed to use any of the following three representations of date/time stamps:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Sun, 06 Nov 1994 08:49:37 GMT  ; RFC 822, updated by RFC 1123
+</span></span><span style="display:flex;"><span>Sunday, 06-Nov-94 08:49:37 GMT ; RFC 850, obsoleted by RFC 1036
+</span></span><span style="display:flex;"><span>Sun Nov  6 08:49:37 1994       ; ANSI C&#39;s asctime() format
+</span></span><span style="display:flex;"><span>Here the first format is the most preferred one.
+</span></span></code></pre></div><p><strong>Pragma</strong></p>
+<p>The Pragma general-header field is used to include implementation specific directives that might apply to any recipient along the request/response chain. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Pragma: no-cache
+</span></span></code></pre></div><p>The only directive defined in HTTP/1.0 is the no-cache directive and is maintained in HTTP 1.1 for backward compatibility. No new Pragma directives will be defined in the future.</p>
+<p><strong>Trailer</strong></p>
+<p>The Trailer general field value indicates that the given set of header fields is present in the trailer of a message encoded with chunked transfer-coding. Following is the syntax of Trailer header field:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Trailer : field-name
+</span></span></code></pre></div><p>Message header fields listed in the Trailer header field must not include the following header fields:</p>
+<ul>
+<li>Transfer-Encoding</li>
+<li>Content-Length</li>
+<li>Trailer</li>
+</ul>
+<p><strong>Transfer-Encoding</strong></p>
+<p>The Transfer-Encoding general-header field indicates what type of transformation has been applied to the message body in order to safely transfer it between the sender and the recipient. This is not the same as content-encoding because transfer-encodings are a property of the message, not of the entity-body. The syntax of Transfer-Encoding header field is as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Transfer-Encoding: chunked
+</span></span></code></pre></div><p>All transfer-coding values are case-insensitive.</p>
+<p><strong>Upgrade</strong></p>
+<p>The Upgrade general-header allows the client to specify what additional communication protocols it supports and would like to use if the server finds it appropriate to switch protocols. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Upgrade: HTTP/2.0, SHTTP/1.3, IRC/6.9, RTA/x11
+</span></span></code></pre></div><p>The Upgrade header field is intended to provide a simple mechanism for transition from HTTP/1.1 to some other, incompatible protocol.</p>
+<p><strong>Via</strong></p>
+<p>The Via general-header must be used by gateways and proxies to indicate the intermediate protocols and recipients. For example, a request message could be sent from an HTTP/1.0 user agent to an internal proxy code-named &ldquo;fred&rdquo;, which uses HTTP/1.1 to forward the request to a public proxy at nowhere.com, which completes the request by forwarding it to the origin server at <a href="https://www.ics.uci.edu">www.ics.uci.edu</a>. The request received by <a href="https://www.ics.uci.edu">www.ics.uci.edu</a> would then have the following Via header field:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Via: 1.0 fred, 1.1 nowhere.com (Apache/1.1)
+</span></span></code></pre></div><p>The Upgrade header field is intended to provide a simple mechanism for transition from HTTP/1.1 to some other, incompatible protocol.</p>
+<p><strong>Warning</strong></p>
+<p>The Warning general-header is used to carry additional information about the status or transformation of a message which might not be reflected in the message. A response may carry more than one Warning header.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Warning : warn-code SP warn-agent SP warn-text SP warn-date
+</span></span></code></pre></div><h4 id="client-request-header">Client Request-header</h4>
+<ul>
+<li><strong>Accept</strong></li>
+</ul>
+<p>The Accept request-header field can be used to specify certain media types which are acceptable for the response. The general syntax is as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Accept: type/subtype [q=qvalue]
+</span></span></code></pre></div><p>Multiple media types can be listed separated by commas and the optional qvalue represents an acceptable quality level for accept types on a scale of 0 to 1. Following is an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Accept: text/plain; q=0.5, text/html, text/x-dvi; q=0.8, text/x-c
+</span></span></code></pre></div><p>This would be interpreted as text/html and text/x-c and are the preferred media types, but if they do not exist, then send the text/x-dvi entity, and if that does not exist, send the text/plain entity.</p>
+<ul>
+<li><strong>Accept-Charset</strong></li>
+</ul>
+<p>The Accept-Charset request-header field can be used to indicate what character sets are acceptable for the response. Following is the general syntax:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Accept-Charset: character_set [q=qvalue]
+</span></span></code></pre></div><p>Multiple character sets can be listed separated by commas and the optional qvalue represents an acceptable quality level for nonpreferred character sets on a scale of 0 to 1. Following is an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Accept-Charset: iso-8859-5, unicode-1-1; q=0.8
+</span></span></code></pre></div><p>The special value &ldquo;*&rdquo;, if present in the Accept-Charset field, matches every character set and if no Accept-Charset header is present, the default is that any character set is acceptable.</p>
+<ul>
+<li><strong>Accept-Encoding</strong></li>
+</ul>
+<p>The Accept-Encoding request-header field is similar to Accept, but restricts the content-codings that are acceptable in the response. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Accept-Encoding: encoding types
+</span></span></code></pre></div><p>Examples are as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Accept-Encoding: compress, gzip
+</span></span><span style="display:flex;"><span>Accept-Encoding:
+</span></span><span style="display:flex;"><span>Accept-Encoding: *
+</span></span><span style="display:flex;"><span>Accept-Encoding: compress;q=0.5, gzip;q=1.0
+</span></span><span style="display:flex;"><span>Accept-Encoding: gzip;q=1.0, identity; q=0.5, *;q=0
+</span></span></code></pre></div><ul>
+<li><strong>Accept-Language</strong></li>
+</ul>
+<p>The Accept-Language request-header field is similar to Accept, but restricts the set of natural languages that are preferred as a response to the request. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Accept-Language: language [q=qvalue]
+</span></span></code></pre></div><p>Multiple languages can be listed separated by commas and the optional qvalue represents an acceptable quality level for non preferred languages on a scale of 0 to 1. Following is an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Accept-Language: da, en-gb;q=0.8, en;q=0.7
+</span></span></code></pre></div><ul>
+<li><strong>Authorization</strong></li>
+</ul>
+<p>The Authorization request-header field value consists of credentials containing the authentication information of the user agent for the realm of the resource being requested. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Authorization : credentials
+</span></span></code></pre></div><p>The HTTP/1.0 specification defines the BASIC authorization scheme, where the authorization parameter is the string of username:password encoded in base 64. Following is an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Authorization: BASIC Z3Vlc3Q6Z3Vlc3QxMjM=
+</span></span></code></pre></div><p>The value decodes into is guest:guest123 where guest is user ID and guest123 is the password.</p>
+<ul>
+<li><strong>Cookie</strong></li>
+</ul>
+<p>The Cookie request-header field value contains a name/value pair of information stored for that URL. Following is the general syntax:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Cookie: name=value
+</span></span></code></pre></div><p>Multiple cookies can be specified separated by semicolons as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Cookie: name1=value1;name2=value2;name3=value3
+</span></span></code></pre></div><ul>
+<li><strong>Expect</strong></li>
+</ul>
+<p>The Expect request-header field is used to indicate that a particular set of server behaviors is required by the client. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Expect : 100-continue | expectation-extension
+</span></span></code></pre></div><p>If a server receives a request containing an Expect field that includes an expectation-extension that it does not support, it must respond with a 417 (Expectation Failed) status.</p>
+<ul>
+<li><strong>From</strong></li>
+</ul>
+<p>The From request-header field contains an Internet e-mail address for the human user who controls the requesting user agent. Following is a simple example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>From: webmaster@w3.org
+</span></span></code></pre></div><p>This header field may be used for logging purposes and as a means for identifying the source of invalid or unwanted requests.</p>
+<ul>
+<li><strong>Host</strong></li>
+</ul>
+<p>The Host request-header field is used to specify the Internet host and the port number of the resource being requested. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Host : &#34;Host&#34; &#34;:&#34; host [ &#34;:&#34; port ] ;
+</span></span></code></pre></div><p>A host without any trailing port information implies the default port, which is 80. For example, a request on the origin server for <a href="http://www.w3.org/pub/WWW/">http://www.w3.org/pub/WWW/</a> would be:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>GET /pub/WWW/ HTTP/1.1
+</span></span><span style="display:flex;"><span>Host: www.w3.org
+</span></span></code></pre></div><ul>
+<li><strong>If-Match</strong></li>
+</ul>
+<p>The If-Match request-header field is used with a method to make it conditional. This header requests the server to perform the requested method only if the given value in this tag matches the given entity tags represented by ETag. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>If-Match : entity-tag
+</span></span></code></pre></div><p>An asterisk (*) matches any entity, and the transaction continues only if the entity exists. Following are possible examples:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>If-Match: &#34;xyzzy&#34;
+</span></span><span style="display:flex;"><span>If-Match: &#34;xyzzy&#34;, &#34;r2d2xxxx&#34;, &#34;c3piozzzz&#34;
+</span></span><span style="display:flex;"><span>If-Match: *
+</span></span></code></pre></div><p>If none of the entity tags match, or if &ldquo;*&rdquo; is given and no current entity exists, the server must not perform the requested method, and must return a 412 (Precondition Failed) response.</p>
+<ul>
+<li><strong>If-Modified-Since</strong></li>
+</ul>
+<p>The If-Modified-Since request-header field is used with a method to make it conditional. If the requested URL has not been modified since the time specified in this field, an entity will not be returned from the server; instead, a 304 (not modified) response will be returned without any message-body. The general syntax of if-modified-since is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>If-Modified-Since : HTTP-date
+</span></span></code></pre></div><p>An example of the field is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>If-Modified-Since: Sat, 29 Oct 1994 19:43:31 GMT
+</span></span></code></pre></div><p>If none of the entity tags match, or if &ldquo;*&rdquo; is given and no current entity exists, the server must not perform the requested method, and must return a 412 (Precondition Failed) response.</p>
+<ul>
+<li><strong>If-None-Match</strong></li>
+</ul>
+<p>The If-None-Match request-header field is used with a method to make it conditional. This header requests the server to perform the requested method only if one of the given value in this tag matches the given entity tags represented by ETag. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>If-None-Match : entity-tag
+</span></span></code></pre></div><p>An asterisk (*) matches any entity, and the transaction continues only if the entity does not exist. Following are the possible examples:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>If-None-Match: &#34;xyzzy&#34;
+</span></span><span style="display:flex;"><span>If-None-Match: &#34;xyzzy&#34;, &#34;r2d2xxxx&#34;, &#34;c3piozzzz&#34;
+</span></span><span style="display:flex;"><span>If-None-Match: *
+</span></span></code></pre></div><ul>
+<li><strong>If-Range</strong></li>
+</ul>
+<p>The If-Range request-header field can be used with a conditional GET to request only the portion of the entity that is missing, if it has not been changed, and the entire entity if it has been changed. The general syntax is as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>If-Range : entity-tag | HTTP-date
+</span></span></code></pre></div><p>Either an entity tag or a date can be used to identify the partial entity already received. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>If-Range: Sat, 29 Oct 1994 19:43:31 GMT
+</span></span></code></pre></div><p>Here if the document has not been modified since the given date, the server returns the byte range given by the Range header, otherwise it returns all of the new document.</p>
+<ul>
+<li><strong>If-Unmodified-Since</strong></li>
+</ul>
+<p>The If-Unmodified-Since request-header field is used with a method to make it conditional. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>If-Unmodified-Since : HTTP-date
+</span></span></code></pre></div><p>If the requested resource has not been modified since the time specified in this field, the server should perform the requested operation as if the If-Unmodified-Since header were not present. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>If-Unmodified-Since: Sat, 29 Oct 1994 19:43:31 GMT
+</span></span></code></pre></div><p>If the request results in anything other than a 2xx or 412 status, the If-Unmodified-Since header should be ignored.</p>
+<ul>
+<li><strong>Max-Forwards</strong></li>
+</ul>
+<p>The Max-Forwards request-header field provides a mechanism with the TRACE and OPTIONS methods to limit the number of proxies or gateways that can forward the request to the next inbound server. Here is the general syntax:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Max-Forwards : n
+</span></span></code></pre></div><p>The Max-Forwards value is a decimal integer indicating the remaining number of times this request message may be forwarded. This is useful for debugging with the TRACE method, avoiding infinite loops. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Max-Forwards : 5
+</span></span></code></pre></div><p>The Max-Forwards header field may be ignored for all other methods defined in the HTTP specification.</p>
+<ul>
+<li><strong>Proxy-Authorization</strong></li>
+</ul>
+<p>The Proxy-Authorization request-header field allows the client to identify itself (or its user) to a proxy which requires authentication. Here is the general syntax:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Proxy-Authorization : credentials
+</span></span></code></pre></div><p>The Proxy-Authorization field value consists of credentials containing the authentication information of the user agent for the proxy and/or realm of the resource being requested.</p>
+<ul>
+<li><strong>Range</strong></li>
+</ul>
+<p>The Range request-header field specifies the partial range(s) of the content requested from the document. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Range: bytes-unit=first-byte-pos &#34;-&#34; [last-byte-pos]
+</span></span></code></pre></div><p>The first-byte-pos value in a byte-range-spec gives the byte-offset of the first byte in a range. The last-byte-pos value gives the byte-offset of the last byte in the range; that is, the byte positions specified are inclusive. You can specify a byte-unit as bytes. Byte offsets start at zero. Some simple examples are as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">-</span> The first 500 bytes 
+</span></span><span style="display:flex;"><span>Range: bytes=0-499
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> The second 500 bytes
+</span></span><span style="display:flex;"><span>Range: bytes=500-999
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> The final 500 bytes
+</span></span><span style="display:flex;"><span>Range: bytes=-500
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> The first and last bytes only
+</span></span><span style="display:flex;"><span>Range: bytes=0-0,-1
+</span></span></code></pre></div><p>Multiple ranges can be listed, separated by commas. If the first digit in the comma-separated byte range(s) is missing, the range is assumed to count from the end of the document. If the second digit is missing, the range is byte n to the end of the document.</p>
+<ul>
+<li><strong>Referer</strong></li>
+</ul>
+<p>The Referer request-header field allows the client to specify the address (URI) of the resource from which the URL has been requested. The general syntax is as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Referer : absoluteURI | relativeURI
+</span></span></code></pre></div><p>Following is a simple example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Referer: http://www.tutorialspoint.org/http/index.htm
+</span></span></code></pre></div><p>If the field value is a relative URI, it should be interpreted relative to the Request-URI.</p>
+<ul>
+<li><strong>TE</strong></li>
+</ul>
+<p>The TE request-header field indicates what extension transfer-coding it is willing to accept in the response and whether or not it is willing to accept trailer fields in a chunked transfer-coding. Following is the general syntax:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>TE   : t-codings
+</span></span></code></pre></div><p>The presence of the keyword &ldquo;trailers&rdquo; indicates that the client is willing to accept trailer fields in a chunked transfer-coding and it is specified either of the ways:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>TE: deflate
+</span></span><span style="display:flex;"><span>TE:
+</span></span><span style="display:flex;"><span>TE: trailers, deflate;q=0.5
+</span></span></code></pre></div><p>If the TE field-value is empty or if no TE field is present, then only transfer-coding is chunked. A message with no transfer-coding is always acceptable.</p>
+<ul>
+<li><strong>User-Agent</strong></li>
+</ul>
+<p>The User-Agent request-header field contains information about the user agent originating the request. Following is the general syntax:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>User-Agent : product | comment
+</span></span></code></pre></div><p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+</span></span></code></pre></div><h4 id="server-response-headers">Server Response Headers</h4>
+<ul>
+<li><strong>Accept-Ranges</strong></li>
+</ul>
+<p>The Accept-Ranges response-header field allows the server to indicate its acceptance of range requests for a resource. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Accept-Ranges  : range-unit | none
+</span></span></code></pre></div><p>For example a server that accepts byte-range requests may send:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Accept-Ranges: bytes
+</span></span></code></pre></div><p>Servers that do not accept any kind of range request for a resource may send:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Accept-Ranges: none
+</span></span></code></pre></div><p>This will advise the client not to attempt a range request.</p>
+<ul>
+<li><strong>Age</strong></li>
+</ul>
+<p>The Age response-header field conveys the sender&rsquo;s estimate of the amount of time since the response (or its revalidation) was generated at the origin server. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Age : delta-seconds
+</span></span></code></pre></div><p>Age values are non-negative decimal integers, representing time in seconds. Following is a simple example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Age: 1030
+</span></span></code></pre></div><p>An HTTP/1.1 server that includes a cache must include an Age header field in every response generated from its own cache.</p>
+<ul>
+<li><strong>ETag</strong></li>
+</ul>
+<p>The ETag response-header field provides the current value of the entity tag for the requested variant. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>ETag :  entity-tag
+</span></span></code></pre></div><p>Here are some simple examples:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>ETag: &#34;xyzzy&#34;
+</span></span><span style="display:flex;"><span>ETag: W/&#34;xyzzy&#34;
+</span></span><span style="display:flex;"><span>ETag: &#34;&#34;
+</span></span></code></pre></div><ul>
+<li><strong>Location</strong></li>
+</ul>
+<p>The Location response-header field is used to redirect the recipient to a location other than the Request-URI for completion. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Location : absoluteURI
+</span></span></code></pre></div><p>Following is a simple example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Location: http://www.tutorialspoint.org/http/index.htm
+</span></span></code></pre></div><p>The Content-Location header field differs from Location in that the Content-Location identifies the original location of the entity enclosed in the request.</p>
+<ul>
+<li><strong>Proxy-Authenticate</strong></li>
+</ul>
+<p>The Proxy-Authenticate response-header field must be included as a part of a 407 (Proxy Authentication Required) response. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Proxy-Authenticate  : challenge
+</span></span></code></pre></div><ul>
+<li><strong>Retry-After</strong></li>
+</ul>
+<p>The Retry-After response-header field can be used with a 503 (Service Unavailable) response to indicate how long the service is expected to be unavailable to the requesting client. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Retry-After : HTTP-date | delta-seconds
+</span></span></code></pre></div><p>Examples:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Retry-After: Fri, 31 Dec 1999 23:59:59 GMT
+</span></span><span style="display:flex;"><span>Retry-After: 120
+</span></span></code></pre></div><p>In the latter example, the delay is 2 minutes.</p>
+<ul>
+<li><strong>Server</strong></li>
+</ul>
+<p>The Server response-header field contains information about the software used by the origin server to handle the request. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Server : product | comment
+</span></span></code></pre></div><p>Following is a simple example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Server: Apache/2.2.14 (Win32)
+</span></span></code></pre></div><p>If the response is being forwarded through a proxy, the proxy application must not modify the Server response-header.</p>
+<ul>
+<li><strong>Set-Cookie</strong></li>
+</ul>
+<p>The Set-Cookie response-header field contains a name/value pair of information to retain for this URL. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Set-Cookie: NAME=VALUE; OPTIONS
+</span></span></code></pre></div><h4 id="entity-headers">Entity Headers</h4>
+<ul>
+<li><strong>Allow</strong></li>
+</ul>
+<p>The Allow entity-header field lists the set of methods supported by the resource identified by the Request-URI. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Allow : Method
+</span></span></code></pre></div><p>You can specify multiple methods separated by commas. Following is a simple example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Allow: GET, HEAD, PUT
+</span></span></code></pre></div><p>This field cannot prevent a client from trying other methods.</p>
+<ul>
+<li><strong>Content-Encoding</strong></li>
+</ul>
+<p>The Content-Encoding entity-header field is used as a modifier to the media-type. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Content-Encoding : content-coding
+</span></span></code></pre></div><p>The content-coding is a characteristic of the entity identified by the Request-URI. Following is a simple example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Content-Encoding: gzip
+</span></span></code></pre></div><p>If the content-coding of an entity in a request message is not acceptable to the origin server, the server should respond with a status code of 415 (Unsupported Media Type).</p>
+<ul>
+<li><strong>Content-Language</strong></li>
+</ul>
+<p>The Content-Language entity-header field describes the natural language(s) of the intended audience for the enclosed entity. Following is the general syntax:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Content-Language : language-tag
+</span></span></code></pre></div><p>Multiple languages may be listed for content that is intended for multiple audiences. Following is a simple example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Content-Language: mi, en
+</span></span></code></pre></div><p>The primary purpose of Content-Language is to allow a user to identify and differentiate entities according to the user&rsquo;s own preferred language.</p>
+<ul>
+<li><strong>Content-Length</strong></li>
+</ul>
+<p>The Content-Length entity-header field indicates the size of the entity-body, in decimal number of OCTETs, sent to the recipient or, in the case of the HEAD method, the size of the entity-body that would have been sent, had the request been a GET. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Content-Length : DIGITS
+</span></span></code></pre></div><p>Following is a simple example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Content-Length: 3495
+</span></span></code></pre></div><p>Any Content-Length greater than or equal to zero is a valid value.</p>
+<ul>
+<li><strong>Content-Location</strong></li>
+</ul>
+<p>The Content-Location entity-header field may be used to supply the resource location for the entity enclosed in the message when that entity is accessible from a location separate from the requested resource&rsquo;s URI. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Content-Location:  absoluteURI | relativeURI 
+</span></span></code></pre></div><p>Following is a simple example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Content-Location: http://www.tutorialspoint.org/http/index.htm
+</span></span></code></pre></div><p>The value of Content-Location also defines the base URI for the entity.</p>
+<ul>
+<li><strong>Content-MD5</strong></li>
+</ul>
+<p>The Content-MD5 entity-header field may be used to supply an MD5 digest of the entity for checking the integrity of the message upon receipt. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Content-MD5  : md5-digest using base64 of 128 bit MD5 digest as per RFC 1864
+</span></span></code></pre></div><p>Following is a simple example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Content-MD5  : 8c2d46911f3f5a326455f0ed7a8ed3b3
+</span></span></code></pre></div><p>The MD5 digest is computed based on the content of the entity-body, including any content-coding that has been applied, but not including any transfer-encoding applied to the message-body.</p>
+<ul>
+<li><strong>Content-Range</strong></li>
+</ul>
+<p>The Content-Range entity-header field is sent with a partial entity-body to specify where in the full entity-body the partial body should be applied. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Content-Range : bytes-unit SP first-byte-pos &#34;-&#34; last-byte-pos
+</span></span></code></pre></div><p>Examples of byte-content-range-spec values, assuming that the entity contains a total of 1234 bytes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">-</span> The first 500 bytes:
+</span></span><span style="display:flex;"><span>Content-Range : bytes 0-499/1234
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> The second 500 bytes:
+</span></span><span style="display:flex;"><span>Content-Range : bytes 500-999/1234
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> All except for the first 500 bytes:
+</span></span><span style="display:flex;"><span>Content-Range : bytes 500-1233/1234
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> The last 500 bytes:
+</span></span><span style="display:flex;"><span>Content-Range : bytes 734-1233/1234
+</span></span></code></pre></div><p>When an HTTP message includes the content of a single range, this content is transmitted with a Content-Range header, and a Content-Length header showing the number of bytes actually transferred. For example,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>HTTP/1.1 206 Partial content
+</span></span><span style="display:flex;"><span>Date: Wed, 15 Nov 1995 06:25:24 GMT
+</span></span><span style="display:flex;"><span>Last-Modified: Wed, 15 Nov 1995 04:58:08 GMT
+</span></span><span style="display:flex;"><span>Content-Range: bytes 21010-47021/47022
+</span></span><span style="display:flex;"><span>Content-Length: 26012
+</span></span><span style="display:flex;"><span>Content-Type: image/gif
+</span></span></code></pre></div><ul>
+<li><strong>Content-Type</strong></li>
+</ul>
+<p>The Content-Type entity-header field indicates the media type of the entity-body sent to the recipient or, in the case of the HEAD method, the media type that would have been sent, had the request been a GET. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Content-Type : media-type
+</span></span></code></pre></div><p>Following is an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Content-Type: text/html; charset=ISO-8859-4
+</span></span></code></pre></div><ul>
+<li><strong>Expires</strong>
+The Expires entity-header field gives the date/time after which the response is considered stale. The general syntax is:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Expires : HTTP-date
+</span></span></code></pre></div><p>Following is an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Expires: Thu, 01 Dec 1994 16:00:00 GMT
+</span></span></code></pre></div><ul>
+<li><strong>Last-Modified</strong></li>
+</ul>
+<p>The Last-Modified entity-header field indicates the date and time at which the origin server believes the variant was last modified. The general syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Last-Modified: HTTP-date
+</span></span></code></pre></div><p>Following is an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Last-Modified: Tue, 15 Nov 1994 12:45:26 GMT
+</span></span></code></pre></div><h2 id="http-cookies">HTTP Cookies</h2>
+<p>A cookie is a piece of data that is issued by a server in an HTTP response and stored for future use by the HTTP client. The client then re-supplies the cookie value in subsequent requests to the same server. This mechanism allows the server to store user preferences and identity individual users.</p>
+<ul>
+<li><a href="#setting-cookies"><strong>Setting Cookies</strong></a></li>
+<li><a href="#retrieving-cookies"><strong>Retrieving Cookies</strong></a></li>
+</ul>
+<h4 id="setting-cookies">Setting Cookies</h4>
+<p>Servers supply cookies by populating the set-cookie response header with the following details:</p>
+<table>
+<thead>
+<tr>
+<th><strong><em>Name</em></strong></th>
+<th><strong><em>Name of the cookie</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Value</td>
+<td>Textual value to be held by the cookie</td>
+</tr>
+<tr>
+<td>Expires</td>
+<td>Date/time when the cookie should be discarded by the browser. If this field is empty the cookie expires at the end of the current browser session. This field can also be used to delete a cookie by setting a date/time in the past.</td>
+</tr>
+<tr>
+<td>Path</td>
+<td>Path below which the cookie should be supplied by the browser.</td>
+</tr>
+<tr>
+<td>Domain</td>
+<td>Web site domain to which this cookie applies. This will default to the current domain and attempts to set cookies on other domains are subject to the privacy controls built into the browser.</td>
+</tr>
+</tbody>
+</table>
+<p>These fields allow a server to create, modify, delete, and control which parts of a web site will receive the cookie.</p>
+<h4 id="retrieving-cookies">Retrieving Cookies</h4>
+<p>Whenever a client is about to make an HTTP request it consults its local cookie store to see if any unexpired cookies match the path and domain it is about to use. Any matching cookie values are submitted back to the server using the cookie header.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>The following cookies were sent to the page:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Name  _ga
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Value  GA1.2.1603568968.1681366048
+</span></span></code></pre></div><h2 id="http-caching">HTTP Caching</h2>
+<p>HTTP is typically used for distributed information systems, where performance can be improved by the use of response caches. The HTTP/1.1 protocol includes a number of elements intended to make caching work.</p>
+<p>The goal of caching in HTTP/1.1 is to eliminate the need to send requests in many cases, and to eliminate the need to send full responses in many other cases.</p>
+<p>The basic cache mechanisms in HTTP/1.1 are implicit directives to caches where server-specifies expiration times and validators. We use the Cache-Control header for this purpose.</p>
+<p>The Cache-Control header allows a client or server to transmit a variety of directives in either requests or responses. These directives typically override the default caching algorithms. The caching directives are specified in a comma-separated list. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Cache-control: no-cache
+</span></span></code></pre></div><p>The following cache request directives can be used by the client in its HTTP request:</p>
+<table>
+<thead>
+<tr>
+<th><strong><em>Cache Request Directive</em></strong></th>
+<th><strong><em>Description</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>no-cache</td>
+<td>A cache must not use the response to satisfy a subsequent request without successful revalidation with the origin server.</td>
+</tr>
+<tr>
+<td>no-store</td>
+<td>The cache should not store anything about the client request or server response.</td>
+</tr>
+<tr>
+<td>max-age = seconds</td>
+<td>Indicates that the client is willing to accept a response whose age is not greater than the specified time in seconds.</td>
+</tr>
+<tr>
+<td>max-stale [ = seconds ]</td>
+<td>Indicates that the client is willing to accept a response that has exceeded its expiration time. If seconds are given, it must not be expired by more than that time.</td>
+</tr>
+<tr>
+<td>min-fresh = seconds</td>
+<td>Indicates that the client is willing to accept a response whose freshness lifetime is not less than its current age plus the specified time in seconds.</td>
+</tr>
+<tr>
+<td>no-transform</td>
+<td>Does not convert the entity-body.</td>
+</tr>
+<tr>
+<td>only-if-cached</td>
+<td>Does not retrieve new data. The cache can send a document only if it is in the cache, and should not contact the origin-server to see if a newer copy exists.</td>
+</tr>
+</tbody>
+</table>
+<p>The following cache response directives can be used by the server in its HTTP response</p>
+<table>
+<thead>
+<tr>
+<th><strong><em>Cache Response Directive</em></strong></th>
+<th><strong><em>Description</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>public</td>
+<td>Indicates that the response may be cached by any cache.</td>
+</tr>
+<tr>
+<td>private</td>
+<td>Indicates that all or part of the response message is intended for a single user and must not be cached by a shared cache.</td>
+</tr>
+<tr>
+<td>no-cache</td>
+<td>A cache must not use the response to satisfy a subsequent request without successful re-validation with the origin server.</td>
+</tr>
+<tr>
+<td>no-store</td>
+<td>The cache should not store anything about the client request or server response.</td>
+</tr>
+<tr>
+<td>no-transform</td>
+<td>Does not convert the entity-body.</td>
+</tr>
+<tr>
+<td>must-revalidate</td>
+<td>The cache must verify the status of stale documents before using it and expired ones should not be used.</td>
+</tr>
+<tr>
+<td>proxy-revalidate</td>
+<td>The proxy-revalidate directive has the same meaning as the must- revalidate directive, except that it does not apply to non-shared user agent caches.</td>
+</tr>
+<tr>
+<td>max-age = seconds</td>
+<td>Indicates that the client is willing to accept a response whose age is not greater than the specified time in seconds.</td>
+</tr>
+<tr>
+<td>s-maxage = seconds</td>
+<td>The maximum age specified by this directive overrides the maximum age specified by either the max-age directive or the Expires header. The s-maxage directive is always ignored by a private cache.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="http-cache-vs-http-cookies">HTTP Cache vs HTTP Cookies</h2>
+<table>
+<thead>
+<tr>
+<th>Parameters</th>
+<th>Http Cache</th>
+<th>Http Cookies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Basics</td>
+<td>A system uses caches for storing content from a website and applications. They make things more accessible for a user.</td>
+<td>A website or application uses cookies to store the user’s activities and identify their trail of preferences.</td>
+</tr>
+<tr>
+<td>Things Stored</td>
+<td>Cache stores Javascript, CSS, HTML pages, media (images and videos), etc.</td>
+<td>Cookies store temporary data for tracking, such as browsing sessions, history of using websites and apps, etc.</td>
+</tr>
+<tr>
+<td>Capacity</td>
+<td>Caches are comparatively less memory efficient. They occupy a lot of space on any device.</td>
+<td>Cookies are far more efficient with the device’s memory. They take up a very lesser amount of memory.</td>
+</tr>
+<tr>
+<td>Location of Storage</td>
+<td>The cache stores the website content only on a user browser.</td>
+<td>Cookies store their content on both- a server as well as a browser.</td>
+</tr>
+<tr>
+<td>Expiration</td>
+<td>One needs to delete the cache manually. It does not expire automatically.</td>
+<td>The cookies have a very limited life span that depends entirely on their creators. The cookies, thus, expire after a fixed amount of time.</td>
+</tr>
+<tr>
+<td>Sent with a Request</td>
+<td>Sending a response in the form of cache does not come as a request to a user.</td>
+<td>Cookies pop up as a request in front of the users as a form of authorization/permission from them. In other words, it only sends a response to the servers with the end user’s confirmation.</td>
+</tr>
+<tr>
+<td>Types</td>
+<td>Proxy Cache and Browser Cache.</td>
+<td>Persistent Cookies and Transient Cookies.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="http-url-encoding">HTTP URL Encoding</h2>
+<p>HTTP URLs can only be sent over the Internet using the ASCII character-set, which often contain characters outside the ASCII set. So these unsafe characters must be replaced with a % followed by two hexadecimal digits.</p>
+<p>The following table shows the ASCII symbols of the characters and their replacements which can be used in the URL before passing it to the server:</p>
+<!-- raw HTML omitted -->
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><strong><em>ASCII</em></strong></th>
+<th style="text-align:center"><strong><em>Symbol</em></strong></th>
+<th style="text-align:center"><strong><em>Replacement</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&lt; 32</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Encode with %xx where xx is the hexadecimal representation of the character.</td>
+</tr>
+<tr>
+<td style="text-align:center">32</td>
+<td style="text-align:center">space</td>
+<td style="text-align:center">+ or %20</td>
+</tr>
+<tr>
+<td style="text-align:center">33</td>
+<td style="text-align:center">!</td>
+<td style="text-align:center">%21</td>
+</tr>
+<tr>
+<td style="text-align:center">34</td>
+<td style="text-align:center">&quot;</td>
+<td style="text-align:center">%22</td>
+</tr>
+<tr>
+<td style="text-align:center">35</td>
+<td style="text-align:center">##</td>
+<td style="text-align:center">%23</td>
+</tr>
+<tr>
+<td style="text-align:center">36</td>
+<td style="text-align:center">$</td>
+<td style="text-align:center">%24</td>
+</tr>
+<tr>
+<td style="text-align:center">37</td>
+<td style="text-align:center">%</td>
+<td style="text-align:center">%25</td>
+</tr>
+<tr>
+<td style="text-align:center">38</td>
+<td style="text-align:center">&amp;</td>
+<td style="text-align:center">%26</td>
+</tr>
+<tr>
+<td style="text-align:center">39</td>
+<td style="text-align:center">'</td>
+<td style="text-align:center">%27</td>
+</tr>
+<tr>
+<td style="text-align:center">40</td>
+<td style="text-align:center">(</td>
+<td style="text-align:center">%28</td>
+</tr>
+<tr>
+<td style="text-align:center">41</td>
+<td style="text-align:center">)</td>
+<td style="text-align:center">%29</td>
+</tr>
+<tr>
+<td style="text-align:center">42</td>
+<td style="text-align:center">*</td>
+<td style="text-align:center">*</td>
+</tr>
+<tr>
+<td style="text-align:center">43</td>
+<td style="text-align:center">+</td>
+<td style="text-align:center">%2B</td>
+</tr>
+<tr>
+<td style="text-align:center">44</td>
+<td style="text-align:center">,</td>
+<td style="text-align:center">%2C</td>
+</tr>
+<tr>
+<td style="text-align:center">45</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">46</td>
+<td style="text-align:center">.</td>
+<td style="text-align:center">.</td>
+</tr>
+<tr>
+<td style="text-align:center">47</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">%2F</td>
+</tr>
+<tr>
+<td style="text-align:center">48</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">49</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">50</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:center">51</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">3</td>
+</tr>
+<tr>
+<td style="text-align:center">52</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">4</td>
+</tr>
+<tr>
+<td style="text-align:center">53</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td style="text-align:center">54</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">6</td>
+</tr>
+<tr>
+<td style="text-align:center">55</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">7</td>
+</tr>
+<tr>
+<td style="text-align:center">56</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">8</td>
+</tr>
+<tr>
+<td style="text-align:center">57</td>
+<td style="text-align:center">9</td>
+<td style="text-align:center">9</td>
+</tr>
+<tr>
+<td style="text-align:center">58</td>
+<td style="text-align:center">:</td>
+<td style="text-align:center">%3A</td>
+</tr>
+<tr>
+<td style="text-align:center">59</td>
+<td style="text-align:center">;</td>
+<td style="text-align:center">%3B</td>
+</tr>
+<tr>
+<td style="text-align:center">60</td>
+<td style="text-align:center">&lt;</td>
+<td style="text-align:center">%3C</td>
+</tr>
+<tr>
+<td style="text-align:center">61</td>
+<td style="text-align:center">=</td>
+<td style="text-align:center">%3D</td>
+</tr>
+<tr>
+<td style="text-align:center">62</td>
+<td style="text-align:center">&gt;</td>
+<td style="text-align:center">%3E</td>
+</tr>
+<tr>
+<td style="text-align:center">63</td>
+<td style="text-align:center">?</td>
+<td style="text-align:center">%3F</td>
+</tr>
+<tr>
+<td style="text-align:center">64</td>
+<td style="text-align:center"><strong>@</strong></td>
+<td style="text-align:center">%40</td>
+</tr>
+<tr>
+<td style="text-align:center">65</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">A</td>
+</tr>
+<tr>
+<td style="text-align:center">66</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">B</td>
+</tr>
+<tr>
+<td style="text-align:center">67</td>
+<td style="text-align:center">C</td>
+<td style="text-align:center">C</td>
+</tr>
+<tr>
+<td style="text-align:center">68</td>
+<td style="text-align:center">D</td>
+<td style="text-align:center">D</td>
+</tr>
+<tr>
+<td style="text-align:center">69</td>
+<td style="text-align:center">E</td>
+<td style="text-align:center">E</td>
+</tr>
+<tr>
+<td style="text-align:center">70</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">71</td>
+<td style="text-align:center">G</td>
+<td style="text-align:center">G</td>
+</tr>
+<tr>
+<td style="text-align:center">72</td>
+<td style="text-align:center">H</td>
+<td style="text-align:center">H</td>
+</tr>
+<tr>
+<td style="text-align:center">73</td>
+<td style="text-align:center">I</td>
+<td style="text-align:center">I</td>
+</tr>
+<tr>
+<td style="text-align:center">74</td>
+<td style="text-align:center">J</td>
+<td style="text-align:center">J</td>
+</tr>
+<tr>
+<td style="text-align:center">75</td>
+<td style="text-align:center">K</td>
+<td style="text-align:center">K</td>
+</tr>
+<tr>
+<td style="text-align:center">76</td>
+<td style="text-align:center">L</td>
+<td style="text-align:center">L</td>
+</tr>
+<tr>
+<td style="text-align:center">77</td>
+<td style="text-align:center">M</td>
+<td style="text-align:center">M</td>
+</tr>
+<tr>
+<td style="text-align:center">78</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+</tr>
+<tr>
+<td style="text-align:center">79</td>
+<td style="text-align:center">O</td>
+<td style="text-align:center">O</td>
+</tr>
+<tr>
+<td style="text-align:center">80</td>
+<td style="text-align:center">P</td>
+<td style="text-align:center">P</td>
+</tr>
+<tr>
+<td style="text-align:center">81</td>
+<td style="text-align:center">Q</td>
+<td style="text-align:center">Q</td>
+</tr>
+<tr>
+<td style="text-align:center">82</td>
+<td style="text-align:center">R</td>
+<td style="text-align:center">R</td>
+</tr>
+<tr>
+<td style="text-align:center">83</td>
+<td style="text-align:center">S</td>
+<td style="text-align:center">S</td>
+</tr>
+<tr>
+<td style="text-align:center">84</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">85</td>
+<td style="text-align:center">U</td>
+<td style="text-align:center">U</td>
+</tr>
+<tr>
+<td style="text-align:center">86</td>
+<td style="text-align:center">V</td>
+<td style="text-align:center">V</td>
+</tr>
+<tr>
+<td style="text-align:center">87</td>
+<td style="text-align:center">W</td>
+<td style="text-align:center">W</td>
+</tr>
+<tr>
+<td style="text-align:center">88</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+</tr>
+<tr>
+<td style="text-align:center">89</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+</tr>
+<tr>
+<td style="text-align:center">90</td>
+<td style="text-align:center">Z</td>
+<td style="text-align:center">Z</td>
+</tr>
+<tr>
+<td style="text-align:center">91</td>
+<td style="text-align:center">[</td>
+<td style="text-align:center">%5B</td>
+</tr>
+<tr>
+<td style="text-align:center">92</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">%5C</td>
+</tr>
+<tr>
+<td style="text-align:center">93</td>
+<td style="text-align:center">]</td>
+<td style="text-align:center">%5D</td>
+</tr>
+<tr>
+<td style="text-align:center">94</td>
+<td style="text-align:center">Backslash</td>
+<td style="text-align:center">%5E</td>
+</tr>
+<tr>
+<td style="text-align:center">95</td>
+<td style="text-align:center">_</td>
+<td style="text-align:center">_</td>
+</tr>
+<tr>
+<td style="text-align:center">96</td>
+<td style="text-align:center">Backtick</td>
+<td style="text-align:center">%60</td>
+</tr>
+<tr>
+<td style="text-align:center">97</td>
+<td style="text-align:center">a</td>
+<td style="text-align:center">a</td>
+</tr>
+<tr>
+<td style="text-align:center">98</td>
+<td style="text-align:center">b</td>
+<td style="text-align:center">b</td>
+</tr>
+<tr>
+<td style="text-align:center">99</td>
+<td style="text-align:center">c</td>
+<td style="text-align:center">c</td>
+</tr>
+<tr>
+<td style="text-align:center">100</td>
+<td style="text-align:center">d</td>
+<td style="text-align:center">d</td>
+</tr>
+<tr>
+<td style="text-align:center">101</td>
+<td style="text-align:center">e</td>
+<td style="text-align:center">e</td>
+</tr>
+<tr>
+<td style="text-align:center">102</td>
+<td style="text-align:center">f</td>
+<td style="text-align:center">f</td>
+</tr>
+<tr>
+<td style="text-align:center">103</td>
+<td style="text-align:center">g</td>
+<td style="text-align:center">g</td>
+</tr>
+<tr>
+<td style="text-align:center">104</td>
+<td style="text-align:center">h</td>
+<td style="text-align:center">h</td>
+</tr>
+<tr>
+<td style="text-align:center">105</td>
+<td style="text-align:center">i</td>
+<td style="text-align:center">i</td>
+</tr>
+<tr>
+<td style="text-align:center">106</td>
+<td style="text-align:center">j</td>
+<td style="text-align:center">j</td>
+</tr>
+<tr>
+<td style="text-align:center">107</td>
+<td style="text-align:center">k</td>
+<td style="text-align:center">k</td>
+</tr>
+<tr>
+<td style="text-align:center">108</td>
+<td style="text-align:center">l</td>
+<td style="text-align:center">l</td>
+</tr>
+<tr>
+<td style="text-align:center">109</td>
+<td style="text-align:center">m</td>
+<td style="text-align:center">m</td>
+</tr>
+<tr>
+<td style="text-align:center">110</td>
+<td style="text-align:center">n</td>
+<td style="text-align:center">n</td>
+</tr>
+<tr>
+<td style="text-align:center">111</td>
+<td style="text-align:center">o</td>
+<td style="text-align:center">o</td>
+</tr>
+<tr>
+<td style="text-align:center">112</td>
+<td style="text-align:center">p</td>
+<td style="text-align:center">p</td>
+</tr>
+<tr>
+<td style="text-align:center">113</td>
+<td style="text-align:center">q</td>
+<td style="text-align:center">q</td>
+</tr>
+<tr>
+<td style="text-align:center">114</td>
+<td style="text-align:center">r</td>
+<td style="text-align:center">r</td>
+</tr>
+<tr>
+<td style="text-align:center">115</td>
+<td style="text-align:center">s</td>
+<td style="text-align:center">s</td>
+</tr>
+<tr>
+<td style="text-align:center">116</td>
+<td style="text-align:center">t</td>
+<td style="text-align:center">t</td>
+</tr>
+<tr>
+<td style="text-align:center">117</td>
+<td style="text-align:center">u</td>
+<td style="text-align:center">u</td>
+</tr>
+<tr>
+<td style="text-align:center">118</td>
+<td style="text-align:center">v</td>
+<td style="text-align:center">v</td>
+</tr>
+<tr>
+<td style="text-align:center">119</td>
+<td style="text-align:center">w</td>
+<td style="text-align:center">w</td>
+</tr>
+<tr>
+<td style="text-align:center">120</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+</tr>
+<tr>
+<td style="text-align:center">121</td>
+<td style="text-align:center">y</td>
+<td style="text-align:center">y</td>
+</tr>
+<tr>
+<td style="text-align:center">122</td>
+<td style="text-align:center">z</td>
+<td style="text-align:center">z</td>
+</tr>
+<tr>
+<td style="text-align:center">123</td>
+<td style="text-align:center">{</td>
+<td style="text-align:center">%7B</td>
+</tr>
+<tr>
+<td style="text-align:center">124</td>
+<td style="text-align:center">pipe</td>
+<td style="text-align:center">%7C</td>
+</tr>
+<tr>
+<td style="text-align:center">125</td>
+<td style="text-align:center">}</td>
+<td style="text-align:center">%7D</td>
+</tr>
+<tr>
+<td style="text-align:center">126</td>
+<td style="text-align:center">~</td>
+<td style="text-align:center">%7E</td>
+</tr>
+<tr>
+<td style="text-align:center">127</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">%7F</td>
+</tr>
+<tr>
+<td style="text-align:center">&gt; 127</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Encode with %xx where xx is the hexadecimal representation of the character.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="http-security">HTTP Security</h2>
+<p>HTTP is used for communications over the internet, so application developers, information providers, and users should be aware of the security limitations in HTTP/1.1. This discussion does not include definitive solutions to the problems mentioned here but it does make some suggestions for reducing security risks.</p>
+<ul>
+<li><a href="#personal-information-leakage"><strong>Personal Information Leakage</strong></a></li>
+<li><a href="#file-and-path-names-based-attack"><strong>File and Path Names Based Attack</strong></a></li>
+<li><a href="#dns-spoofing"><strong>DNS Spoofing</strong></a></li>
+<li><a href="#location-headers-and-spoofing"><strong>Location Headers and Spoofing</strong></a></li>
+<li><a href="#authentication-credentials"><strong>Authentication Credentials</strong></a></li>
+<li><a href="#proxies-and-caching"><strong>Proxies and Caching</strong></a></li>
+</ul>
+<h4 id="personal-information-leakage">Personal Information Leakage</h4>
+<p>HTTP clients are often privy to large amount of personal information such as the user&rsquo;s name, location, mail address, passwords, encryption keys, etc. So you should be very careful to prevent unintentional leakage of this information via the HTTP protocol to other sources.</p>
+<ul>
+<li>All the confidential information should be stored at the server in encrypted form.</li>
+<li>Revealing the specific software version of the server might allow the server machine to become more vulnerable to attacks against software that is known to contain security holes.</li>
+<li>Proxies that serve as a portal through a network firewall should take special precautions regarding the transfer of header information that identifies the hosts behind the firewall.</li>
+<li>The information sent in the &lsquo;From&rsquo; field might conflict with the user&rsquo;s privacy interests or their site&rsquo;s security policy, and hence, it should not be transmitted without the user being able to disable, enable, and modify the contents of the field.</li>
+<li>Clients should not include a Referer header field in a (non-secure) HTTP request, if the referring page was transferred with a secure protocol.</li>
+<li>Authors of services that use the HTTP protocol should not use GET based forms for the submission of sensitive data, because it will cause the data to be encoded in the Request-URI.</li>
+</ul>
+<h4 id="file-and-path-names-based-attack">File and Path Names Based Attack</h4>
+<p>The document should be restricted to the documents returned by HTTP requests to be only those that were intended by the server administrators.</p>
+<p>For example, UNIX, Microsoft Windows, and other operating systems use &lsquo;..&rsquo; as a path component to indicate a directory level above the current one. On such a system, an HTTP server MUST disallow any such construct in the Request-URI, if it would otherwise allow access to a resource outside those intended to be accessible via the HTTP server.</p>
+<h4 id="dns-spoofing">DNS Spoofing</h4>
+<p>Clients using HTTP rely heavily on the Domain Name Service, and are thus generally prone to security attacks based on the deliberate mis-association of IP addresses and DNS names. So clients need to be cautious in assuming the continuing validity of an IP number/DNS name association.</p>
+<p>If HTTP clients cache the results of host name lookups in order to achieve a performance improvement, they must observe the TTL information reported by the DNS. If HTTP clients do not observe this rule, they could be spoofed when a previously-accessed server&rsquo;s IP address changes.</p>
+<h4 id="location-headers-and-spoofing">Location Headers and Spoofing</h4>
+<p>If a single server supports multiple organizations that do not trust one another, then it MUST check the values of Location and Content Location headers in the responses that are generated under the control of said organizations to make sure that they do not attempt to invalidate resources over which they have no authority.</p>
+<h4 id="authentication-credentials">Authentication Credentials</h4>
+<p>Existing HTTP clients and user agents typically retain authentication information indefinitely. HTTP/1.1 does not provide a method for a server to direct clients to discard these cached credentials which is a big security risk.</p>
+<p>There are a number of work around to the parts of this problem, and so it is recommended to make the use of password protection in screen savers, idle time-outs, and other methods that mitigate the security problems inherent in this problem.</p>
+<h4 id="proxies-and-caching">Proxies and Caching</h4>
+<p>HTTP proxies are men-in-the-middle, and represent an opportunity for man-in-the-middle attacks. Proxies have access to security-related information, personal information about individual users and organizations, and proprietary information belonging to users and content providers.</p>
+<p>Proxy operators should protect the systems on which proxies run, as they would protect any system that contains or transports sensitive information.</p>
+<p>Caching proxies provide additional potential vulnerabilities, since the contents of the cache represent an attractive target for malicious exploitation. Therefore, cache contents should be protected as sensitive information.</p>
+<h2 id="http-examples">HTTP Examples</h2>
+<p><strong>Example 1</strong></p>
+<p>HTTP request to fetch hello.htm page from the web server</p>
+<p>Client request</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>GET /hello.htm HTTP/1.1
+</span></span><span style="display:flex;"><span>User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+</span></span><span style="display:flex;"><span>Host: www.tutorialspoint.com
+</span></span><span style="display:flex;"><span>Accept-Language: en-us
+</span></span><span style="display:flex;"><span>Accept-Encoding: gzip, deflate
+</span></span><span style="display:flex;"><span>Connection: Keep-Alive
+</span></span></code></pre></div><p>Server response</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>HTTP/1.1 200 OK
+</span></span><span style="display:flex;"><span>Date: Mon, 27 Jul 2009 12:28:53 GMT
+</span></span><span style="display:flex;"><span>Server: Apache/2.2.14 (Win32)
+</span></span><span style="display:flex;"><span>Last-Modified: Wed, 22 Jul 2009 19:15:56 GMT
+</span></span><span style="display:flex;"><span>Content-Length: 88
+</span></span><span style="display:flex;"><span>Content-Type: text/html
+</span></span><span style="display:flex;"><span>Connection: Closed
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-htm" data-lang="htm"><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>   &lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   &lt;<span style="color:#f92672">h1</span>&gt;Hello, World!&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p><strong>Example 2</strong></p>
+<p>HTTP request to fetch t.html page that does not exist on the web server.</p>
+<p>Client request</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>GET /t.html HTTP/1.1
+</span></span><span style="display:flex;"><span>User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+</span></span><span style="display:flex;"><span>Host: www.tutorialspoint.com
+</span></span><span style="display:flex;"><span>Accept-Language: en-us
+</span></span><span style="display:flex;"><span>Accept-Encoding: gzip, deflate
+</span></span><span style="display:flex;"><span>Connection: Keep-Alive
+</span></span></code></pre></div><p>Server response</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>HTTP/1.1 404 Not Found
+</span></span><span style="display:flex;"><span>Date: Sun, 18 Oct 2012 10:36:20 GMT
+</span></span><span style="display:flex;"><span>Server: Apache/2.2.14 (Win32)
+</span></span><span style="display:flex;"><span>Content-Length: 230
+</span></span><span style="display:flex;"><span>Content-Type: text/html; charset=iso-8859-1
+</span></span><span style="display:flex;"><span>Connection: Closed
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-htm" data-lang="htm"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE HTML PUBLIC &#34;-//IETF//DTD HTML 2.0//EN&#34;&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>   &lt;<span style="color:#f92672">title</span>&gt;404 Not Found&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>   &lt;<span style="color:#f92672">h1</span>&gt;Not Found&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>   &lt;<span style="color:#f92672">p</span>&gt;The requested URL /t.html was not found on this server.&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://www.tutorialspoint.com/http/index.htm">https://www.tutorialspoint.com/http/index.htm</a></li>
+<li><a href="https://www.javatpoint.com/http-tutorial">https://www.javatpoint.com/http-tutorial</a></li>
+</ul>
+
+	<style>
+  .feedback--answer {
+    display: inline-block;
+  }
+  .feedback--answer-no {
+    margin-left: 1em;
+  }
+  .feedback--response {
+    display: none;
+    margin-top: 1em;
+  }
+  .feedback--response__visible {
+    display: block;
+  }
+</style>
+<div class="d-print-none">
+<h2 class="feedback--title">Feedback</h2>
+<p class="feedback--question">Was this page helpful?</p>
+<button class="btn btn-primary mb-4 feedback--answer feedback--answer-yes">Yes</button>
+<button class="btn btn-primary mb-4 feedback--answer feedback--answer-no">No</button>
+<p class="feedback--response feedback--response-yes">
+  Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.
+</p>
+<p class="feedback--response feedback--response-no">
+  Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.
+</p>
+</div>
+<script>
+  const yesButton = document.querySelector('.feedback--answer-yes');
+  const noButton = document.querySelector('.feedback--answer-no');
+  const yesResponse = document.querySelector('.feedback--response-yes');
+  const noResponse = document.querySelector('.feedback--response-no');
+  const disableButtons = () => {
+    yesButton.disabled = true;
+    noButton.disabled = true;
+  };
+  const sendFeedback = (value) => {
+    if (typeof gtag !== 'function') return;
+    gtag('event', 'page_helpful', {
+      'event_category': 'Helpful',
+      'event_label': window.location.pathname,
+      'value': value
+    });
+  };
+  yesButton.addEventListener('click', () => {
+    yesResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback( 100 );
+  });
+  noButton.addEventListener('click', () => {
+    noResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(0);
+  });
+</script>
+<br />
+
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Twitter" aria-label="Twitter">
+    <a target="_blank" rel="noopener" href="https://twitter.com/kubernetesio" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Calendar" aria-label="Calendar">
+    <a target="_blank" rel="noopener" href="https://calendar.google.com/calendar/embed?src=calendar%40kubernetes.io" aria-label="Calendar">
+      <i class="fas fa-calendar-alt"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Youtube" aria-label="Youtube">
+    <a target="_blank" rel="noopener" href="https://youtube.com" aria-label="Youtube">
+      <i class="fab fa-youtube"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-end text-xs-center order-sm-3">
+        
+        
+        
+<ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/PadmanabhanSaravanan" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Slack" aria-label="Slack">
+    <a target="_blank" rel="noopener" href="https://slack.com" aria-label="Slack">
+      <i class="fab fa-slack"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Contribute" aria-label="Contribute">
+    <a target="_blank" rel="noopener" href="https://git.com" aria-label="Contribute">
+      <i class="fas fa-edit"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Stack Overflow" aria-label="Stack Overflow">
+    <a target="_blank" rel="noopener" href="https://stackoverflow.com" aria-label="Stack Overflow">
+      <i class="fab fa-stack-overflow"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="td-footer__copyright-etc col-12 col-sm-4 text-center py-2 order-sm-2">
+       <img src="images/logo1.png" alt="Swayaan" width="25px" height="25px" /> &nbsp; Copyright 
+        &copy; Swayaan LMS - Powered by <a href="http://www.swayaan.com">Swayaan.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <script src="/website/js/main.min.fc78cdd8fc628be0fa96d034b40392e1845be595ca889ba19f624f749f228575.js" integrity="sha256-/HjN2Pxii&#43;D6ltA0tAOS4YRb5ZXKiJuhn2JPdJ8ihXU=" crossorigin="anonymous"></script>
+<script defer src="/website/js/click-to-copy.min.f724d3de49218995223b7316aa2e53e2b34bf42026bf399ebb21bb02212402d1.js" integrity="sha256-9yTT3kkhiZUiO3MWqi5T4rNL9CAmvzmeuyG7AiEkAtE=" crossorigin="anonymous"></script>
+<script src='/website/js/tabpane-persist.js'></script>
+
+  </body>
+</html>
