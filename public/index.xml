@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Swayaan LMS – Swayaan LLM</title>
+    <link>https://padmanabhansaravanan.github.io/website/</link>
+    <description>Recent content in Swayaan LLM on Swayaan LMS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="https://padmanabhansaravanan.github.io/website/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+      
+    
+    
+  </channel>
+</rss>
