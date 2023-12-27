@@ -1,0 +1,37 @@
+{{ $links := .Site.Params.links -}}
+<footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        {{ with $links }}
+        {{ with index . "user" }}
+        {{ template "footer-links-block"  . }}
+        {{ end }}
+        {{ end }}
+      </div>
+      <div class="col-6 col-sm-4 text-end text-xs-center order-sm-3">
+        {{ with $links }}
+        {{ with index . "developer" }}
+        {{ template "footer-links-block"  . }}
+        {{ end }}
+        {{ end }}
+      </div>
+      <div class="td-footer__copyright-etc col-12 col-sm-4 text-center py-2 order-sm-2">
+       <img src="images/logo1.png" alt="Swayaan" width="25px" height="25px" /> &nbsp; Copyright 
+        &copy; Swayaan LMS - Powered by <a href="http://www.swayaan.com">Swayaan.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{{- define "footer-links-block" }}
+<ul class="td-footer__links-list">
+  {{ range . }}
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="{{ .name }}" aria-label="{{ .name }}">
+    <a target="_blank" rel="noopener" href="{{ .url }}" aria-label="{{ .name }}">
+      <i class="{{ .icon }}"></i>
+    </a>
+  </li>
+  {{ end }}
+</ul>
+{{ end -}}
