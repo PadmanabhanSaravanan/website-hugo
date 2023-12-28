@@ -1,4 +1,4 @@
-baseURL = 'https://padmanabhansaravanan.github.io/website/'
+baseURL = 'https://padmanabhansaravanan.github.io/'
 title = 'Swayaan LMS'
 
 # Hugo allows theme composition (and inheritance). The precedence is from left to right.

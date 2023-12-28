@@ -11,7 +11,7 @@ description: |
 
 # HTTP
 
-![image http](../../../../static/images-http/logo.png)
+![image http](/image/logo.png)
 
 ## TABLE OF CONTENT 
 
