@@ -1,6 +1,8 @@
 {{ if not .Params.notoc -}}
   {{ with .TableOfContents -}}
     {{ if ne . `<nav id="TableOfContents"></nav>` -}}
+      <b><hr style="border-color: #000;"></b>
+      <h3>Table of Contents</h3>
       <div class="td-toc">
         {{ . }}
       </div>

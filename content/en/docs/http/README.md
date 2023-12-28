@@ -1,19 +1,18 @@
 ---
 title: HTTP
 content_type: tutorial
-weight: 5
+weight: 10
 card:
   name: tutorials
   weight: 10
 description: |
-  Documentation for HTTP.
 ---
-
-# HTTP
 
 ![image http](/images-http/logo.png)
 
-## TABLE OF CONTENT 
+---
+
+# TABLE OF CONTENT 
 
 1. [**Introduction to HTTP**](#introduction-to-http)
 2. [**HTTP Parameters**](#http-parameters)
@@ -31,6 +30,7 @@ description: |
 14. [**HTTP Examples**](#http-examples)
 15. [**Reference**](#reference)
 
+---
 ## Introduction to HTTP
 
 * [**What is HTTP**](#what-is-http)
@@ -38,6 +38,8 @@ description: |
 * [**HTTP Architecture**](#http-architecture)
 * [**Advantages of HTTP**](#advantages-of-http)
 * [**Disadvantages of HTTP**](#disadvantages-of-http)
+
+---
 
 #### What is HTTP
 
@@ -51,6 +53,8 @@ description: |
 
 ![image http](/images-http/http.png)
 
+---
+
 #### Features of HTTP
 
 There are three basic features of HTTP 
@@ -58,6 +62,8 @@ There are three basic features of HTTP
 * **HTTP is connectionless** : The HTTP client, i.e., a browser initiates an HTTP request and after a request is made, the client waits for the response. The server processes the request and sends a response back after which client disconnect the connection. So client and server knows about each other during current request and response only. Further requests are made on new connection like client and server are new to each other.
 * **HTTP is media independent**: It means, any type of data can be sent by HTTP as long as both the client and the server know how to handle the data content. It is required for the client as well as the server to specify the content type using appropriate MIME-type.
 * **HTTP is stateless:** As mentioned above, HTTP is connectionless and it is a direct result of HTTP being a stateless protocol. The server and client are aware of each other only during a current request. Afterwards, both of them forget about each other. Due to this nature of the protocol, neither the client nor the browser can retain information between different requests across the web pages.
+
+---
 
 #### HTTP Architecture
 
@@ -73,6 +79,8 @@ The HTTP client sends a request to the server in the form of a request method, U
 Server
 The HTTP server responds with a status line, including the message's protocol version and a success or error code, followed by a MIME-like message containing server information, entity meta information, and possible entity-body content.
 
+---
+
 #### Advantages of HTTP
 
 1. **Addressing**: HTTP uses advanced scheme of addressing. It assigns IP address with recognizable names so that it can be identified easily in the World Wide Web. Compared to the standard procedure of IP address with a series of numbers, using this the public can easily engage with the internet.
@@ -86,6 +94,8 @@ The HTTP server responds with a status line, including the message's protocol ve
 
 5. **Accessibility** : When the page is loaded for the first time, all of the HTTP pages gets stored inside the internet caches known as the page cache. Therefore, once the page is visited again, the content is loaded quickly.
 
+---
+
 #### Disadvantages of HTTP
 
 1. **Data Integrity** : Since there are no any encryption methods used in HTTP, there are chances of someone altering the content. That is the reason why HTTP is considered to be an insecure method prone to data integrity.
@@ -96,6 +106,8 @@ The HTTP server responds with a status line, including the message's protocol ve
 4. **Administrative Overhead** : For transmitting a web page, a HTTP needs to create multiple connections. This causes administrative overhead in the connection. 
 
 5. **IoT Device Support** : HTTP uses more number of system resources which leads to more power consumption. Since IoT device today contain wireless sensor networks, it is not suitable to use HTTP. 
+
+---
 
 ## HTTP Parameters
 
@@ -110,6 +122,8 @@ The various parameters of HTTP are as follows:
 * [**Content Encodings**](#content-encodings)
 * [**Media Types**](#media-types)
 * [**Language Tags**](#language-tags)
+
+---
 
 #### HTTP Version
 
@@ -130,6 +144,8 @@ or
 
 HTTP/1.1
 ```
+
+---
 
 #### Uniform Resource Identifiers
 
@@ -152,6 +168,8 @@ http://ABC.com/%7Esmith/home.html
 http://ABC.com:/%7esmith/home.html
 ```
 
+---
+
 #### Date or Time Formats
 
 * All HTTP date/time stamps MUST be represented in Greenwich Mean Time (GMT), without exception.
@@ -162,6 +180,8 @@ Sun, 06 Nov 1994 08:49:37 GMT  ; RFC 822, updated by RFC 1123
 Sunday, 06-Nov-94 08:49:37 GMT ; RFC 850, obsoleted by RFC 1036
 Sun Nov  6 08:49:37 1994       ; ANSI C's asctime() format
 ```
+
+---
 
 #### Character Sets
 
@@ -182,6 +202,8 @@ or
 
 ISO-8859-7
 ```
+
+---
 
 #### Content Encodings
 
@@ -205,6 +227,8 @@ or
 Accept-encoding: deflate
 ```
 
+---
+
 #### Media Types
 
 HTTP uses Internet Media Types in the Content-Type and Accept header fields in order to provide open and extensible data typing and type negotiation. All the Media-type values are registered with the Internet Assigned Number Authority (IANA).
@@ -223,6 +247,8 @@ Example:
 Accept: image/gif
 ```
 
+---
+
 #### Language Tags
 
 HTTP uses language tags within the Accept-Language and Content-Language fields. A language tag is composed of one or more parts: a primary language tag and a possibly empty series of subtags:
@@ -239,6 +265,8 @@ Example:
 en, en-US, en-cockney, i-cherokee, x-pig-latin
 ```
 
+---
+
 ## Working of Web
 
 The browser sends an HTTP request message to the server, asking it to send a copy of the website to the client and server send back HTTP response message to browser. 
@@ -246,6 +274,8 @@ The browser sends an HTTP request message to the server, asking it to send a cop
 This message, and all other data sent between the client and the server, is sent across your internet connection using TCP/IP.
 
 ![image working-of-web](/images-http/working-of-web.png)
+
+---
 
 ## HTTP Messages 
 
@@ -258,6 +288,8 @@ The HTTP Messages can be classified as follows:
 * [**Message Body**](#message-body)
 * [**Message Length**](#message-length)
 * [**General Header Fields**](#general-header-fields)
+
+---
 
 #### Message Type
 
@@ -297,6 +329,8 @@ HTTP/1.0 404 Not Found
 
 ![image request](/images-http/http-message2.png)
 
+---
+
 #### Message Headers
 
 The Message header provides information about the request and response. It also provides information about the object which is sent in the message body. Message Headers are of four types:
@@ -312,6 +346,8 @@ All the above headers follow the same generic format. Each of the header fields 
 message-header = field-name ":" [ field-value ]  
 ```
 
+---
+
 #### Message Body
 
 The message body of an HTTP message is used to carry the entire body associated with the request and response. The message-body differs from the entire-body only when a transfer-coding has been applied, as indicated by the Transfer-Encoding header field.
@@ -325,11 +361,15 @@ message-body = entity-body
 
 Transfer-Encoding MUST be used to indicate any transfer-codings which is applied by an application to ensure safe and proper transfer of the message. Transfer-Encoding is a property of the message.
 
+---
+
 #### Message Length
 
 The transfer-length of a message is the length of the message-body, and it appears in the message.
 
 In a message, when a message body is allowed, and Content-Length is given, its field value MUST exactly match the number of OCTETs in the message-body. When an invalid length is received and detected, the HTTP/1.1 user agents MUST notify the user.
+
+---
 
 #### General Header Fields
 
@@ -339,7 +379,9 @@ Syntax
 
 ```markdown
 general-header = Cache-Control 
-``` 
+```
+
+---
 
 ## HTTP Request
 
@@ -367,6 +409,8 @@ Request  = Request-Line
 * [**Request Header Fields**](#request-header-fields)
 * [**Examples**](#http-request-examples)
 
+---
+
 #### Request Line
 
 The Request-Line starts with a method token, which is followed by the Request-URI, the protocol version, and ending with CRLF. Using the SP characters, the elements are separated.
@@ -376,6 +420,8 @@ The Request-Line starts with a method token, which is followed by the Request-UR
 ```markdown
 Request-Line   = Method SP Request-URI SP HTTP-Version CRLF 
 ``` 
+
+---
 
 #### Request Method
 
@@ -392,6 +438,8 @@ The request method indicates the method to be performed on the resource identifi
 | 7           | OPTIONS      | Describe the communication options for the target resource.                                                                                                                       |
 | 8           | TRACE        | Performs a message loop back test along with the path to the target resource.                                                                                                     |
 
+---
+
 #### Request URI
 
 The Request-URI is a **Uniform Resource Identifier** and identifies the resource upon which to apply the request. Following are the most commonly used forms to specify an URI:
@@ -406,6 +454,8 @@ Request-URI = "*" | absoluteURI | abs_path | authority
 | absoluteURI   | The absoluteURI form is used only when the request is being made to a proxy. The requested proxy is used to forward the request and return the response. Example : GET http://swayaan.com/ HTTP/1.1                                               |
 | absolute path | The absolute path can't be empty. If in the original URI, none is present, it must be given as "/"                                                                                                                                                |
 | authority     | The authority form is only used by the CONNECT method.                                                                                                                                                                                            |
+
+---
 
 #### Request Header Fields
 
@@ -435,6 +485,8 @@ request-header = Accept
                       | User-Agent  
 ```
 
+---
+
 #### HTTP Request Examples
 
 Now let's put it all together to form an HTTP request to fetch hello.htm page from the web
@@ -447,6 +499,8 @@ Accept-Language: en-us
 Accept-Encoding: gzip, deflate
 Connection: Keep-Alive
 ```
+
+---
 
 ## HTTP Responses
 
@@ -462,6 +516,8 @@ An HTTP response contains the following things:
 * [**Status Line**](#message-status-line)
 * [**Response Header Fields or a series of HTTP headers**](#response-header-fields)
 * [**Examples**](#http-response-examples)
+
+---
 
 #### Message Status-Line
 
@@ -491,6 +547,8 @@ The Status-Code element is a 3-digit integer where first digit of the Status-Cod
 | 4           | 4xx: Client Error  | It means the request contains incorrect syntax or cannot be fulfilled.   |
 | 5           | 5xx: Server Error  | It means the server failed to fulfill an apparently valid request.       |
 
+---
+
 #### Response Header Fields
 
 The HTTP Headers for the response of the server contain the information that a client can use to find out more about the response, and about the server that sent it. This information is used to assist the client with displaying the response to a user, with storing the response for the use of future, and with making further requests to the server now or in the future.
@@ -506,6 +564,8 @@ response-header = Accept-Ranges
                   | Vary                    
                   | WWW-Authenticate     
 ```
+
+---
 
 #### HTTP Response Examples
 
@@ -553,6 +613,8 @@ Content-Type: text/html; charset=iso-8859-1
 </html>
 ```
 
+---
+
 ## HTTP Methods
 
 For HTTP/1.1, the set of common methods are defined below. This set can be expanded based on the requirements. The name of these methods is case sensitive, and they must be used in uppercase.
@@ -567,6 +629,8 @@ For HTTP/1.1, the set of common methods are defined below. This set can be expan
 | [**CONNECT**](#connect-method) | Establishes a tunnel to the server identified by a given URI.                                                                                                                     |
 | [**OPTIONS**](#options-method) | Describe the communication options for the target resource.                                                                                                                       |
 | [**TRACE**](#trace-method)     | Performs a message loop back test along with the path to the target resource.                                                                                                     |
+
+---
 
 #### GET Method
 
@@ -604,6 +668,8 @@ Connection: Closed
 </html>
 ```
 
+---
+
 #### HEAD Method
 
 The HEAD method is functionally similar to GET, except that the server replies with a response line and headers, but no entity-body. The following example makes use of HEAD method to fetch header information about hello.htm:
@@ -633,6 +699,8 @@ Connection: Closed
 ```
 
 You can notice that here server the does not send any data after header.
+
+---
 
 #### POST Method
 
@@ -677,6 +745,8 @@ Connection: Closed
 </html>
 ```
 
+---
+
 #### PUT Method
 
 The PUT method is used to request the server to store the included entity-body at a location specified by the given URL. The following example requests the server to save the given entity-body in hello.htm at the root of the server:
@@ -718,6 +788,8 @@ Connection: Closed
 </html>
 ```
 
+---
+
 #### DELETE Method
 
 The DELETE method is used to request the server to delete a file at a location specified by the given URL. The following example requests the server to delete the given file hello.htm at the root of the server:
@@ -749,6 +821,8 @@ Connection: Closed
 </html>
 ```
 
+---
+
 #### CONNECT Method
 
 The CONNECT method is used by the client to establish a network connection to a web server over HTTP. The following example requests a connection with a web server
@@ -765,6 +839,8 @@ HTTP/1.1 200 Connection established
 Date: Mon, 27 Jul 2009 12:28:53 GMT
 Server: Apache/2.2.14 (Win32)
 ```
+
+---
 
 #### OPTIONS Method
 
@@ -784,6 +860,8 @@ Server: Apache/2.2.14 (Win32)
 Allow: GET,HEAD,POST,OPTIONS,TRACE
 Content-Type: httpd/unix-directory
 ```
+
+---
 
 #### TRACE Method
 
@@ -810,6 +888,8 @@ Host: www.tutorialspoint.com
 User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
 ```
 
+---
+
 ## HTTP Status Codes
 
 The Status-Code element in a server response, is a 3-digit integer where the first digit of the Status-Code defines the class of response and the last two digits do not have any categorization role. There are 5 values for the first digit
@@ -822,14 +902,18 @@ The Status-Code element in a server response, is a 3-digit integer where the fir
 | [**4xx: Client Error**](#4xx-client-error) | It means the request contains incorrect syntax or cannot be fulfilled.   |
 | [**5xx: Server Error**](#5xx-server-error) | It means the server failed to fulfill an apparently valid request.       |
 
-#### 1xx Information
+---
+
+### 1xx Information
 
 | **_Message_**           | **_Description_**                                                                                                                                 |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 100 Continue            | Only a part of the request has been received by the server, but as long as it has not been rejected, the client should continue with the request. |
 | 101 Switching Protocols | The server switches protocol.                                                                                                                     |
 
-#### 2xx Success
+---
+
+### 2xx Success
 
 | **_Message_**                     | **_Description_**                                                                                                                                                                                              |
 | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -841,7 +925,9 @@ The Status-Code element in a server response, is a 3-digit integer where the fir
 | 205 Reset Content                 | The browser should clear the form used for this transaction for additional input.                                                                                                                              |
 | 206 Partial Content               | The server is returning partial data of the size requested. Used in response to a request specifying a Range header. The server must specify the range included in the response with the Content-Range header. |
 
-#### 3xx Redirection
+---
+
+### 3xx Redirection
 
 | **_Message_**          | **_Description_**                                                                                                                        |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -854,7 +940,9 @@ The Status-Code element in a server response, is a 3-digit integer where the fir
 | 306 Unused             | This code was used in a previous version. It is no longer used, but the code is reserved.                                                |
 | 307 Temporary Redirect | The requested page has moved temporarily to a new url.                                                                                   |
 
-#### 4xx Client Error
+---
+
+### 4xx Client Error
 
 | **_Message_**                       | **_Description_**                                                                                                                                                |
 | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -877,7 +965,9 @@ The Status-Code element in a server response, is a 3-digit integer where the fir
 | 416 Requested Range Not Satisfiable | The requested byte range is not available and is out of bounds.                                                                                                  |
 | 417 Expectation Failed              | The expectation given in an Expect request-header field could not be met by this server.                                                                         |
 
-#### 5xx Server Error
+---
+
+### 5xx Server Error
 
 | **_Message_**                  | **_Description_**                                                                                |
 | ------------------------------ | ------------------------------------------------------------------------------------------------ |
@@ -888,6 +978,8 @@ The Status-Code element in a server response, is a 3-digit integer where the fir
 | 504 Gateway Timeout            | The gateway has timed out.                                                                       |
 | 505 HTTP Version Not Supported | The server does not support the "http protocol" version.                                         |
 
+---
+
 ## HTTP Header Fields
 
 HTTP header fields provide required information about the request or response, or about the object sent in the message body. There are four types of HTTP message headers:
@@ -896,6 +988,8 @@ HTTP header fields provide required information about the request or response, o
 * [**Client Request-header**](#client-request-header): These header fields have applicability only for request messages.
 * [**Server Response-header**](#server-response-headers): These header fields have applicability only for response messages.
 * [**Entity-header**](#entity-headers): These header fields define meta information about the entity-body or, if no body is present, about the resource identified by the request.
+
+---
 
 #### General Headers
 
@@ -1031,6 +1125,8 @@ The Warning general-header is used to carry additional information about the sta
 ```markdown
 Warning : warn-code SP warn-agent SP warn-text SP warn-date
 ```
+
+---
 
 #### Client Request-header
 
@@ -1344,6 +1440,8 @@ Example:
 User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
 ```
 
+---
+
 #### Server Response Headers
 
 * **Accept-Ranges**
@@ -1464,6 +1562,8 @@ The Set-Cookie response-header field contains a name/value pair of information t
 ```markdown
 Set-Cookie: NAME=VALUE; OPTIONS
 ```
+
+---
 
 #### Entity Headers
 
@@ -1638,12 +1738,16 @@ Following is an example:
 Last-Modified: Tue, 15 Nov 1994 12:45:26 GMT
 ```
 
+---
+
 ## HTTP Cookies
 
 A cookie is a piece of data that is issued by a server in an HTTP response and stored for future use by the HTTP client. The client then re-supplies the cookie value in subsequent requests to the same server. This mechanism allows the server to store user preferences and identity individual users.
 
 * [**Setting Cookies**](#setting-cookies)
 * [**Retrieving Cookies**](#retrieving-cookies)
+
+---
 
 #### Setting Cookies
 
@@ -1658,6 +1762,8 @@ Servers supply cookies by populating the set-cookie response header with the fol
 
 These fields allow a server to create, modify, delete, and control which parts of a web site will receive the cookie.
 
+---
+
 #### Retrieving Cookies
 
 Whenever a client is about to make an HTTP request it consults its local cookie store to see if any unexpired cookies match the path and domain it is about to use. Any matching cookie values are submitted back to the server using the cookie header.
@@ -1671,6 +1777,8 @@ Name  _ga
 
 Value  GA1.2.1603568968.1681366048
 ```
+
+---
 
 ## HTTP Caching
 
@@ -1713,6 +1821,8 @@ The following cache response directives can be used by the server in its HTTP re
 | s-maxage = seconds             | The maximum age specified by this directive overrides the maximum age specified by either the max-age directive or the Expires header. The s-maxage directive is always ignored by a private cache. |
 
 
+---
+
 ## HTTP Cache vs HTTP Cookies
 
 | Parameters          | Http Cache                                                                                                             | Http Cookies                                                                                                                                                                                 |
@@ -1724,6 +1834,8 @@ The following cache response directives can be used by the server in its HTTP re
 | Expiration          | One needs to delete the cache manually. It does not expire automatically.                                              | The cookies have a very limited life span that depends entirely on their creators. The cookies, thus, expire after a fixed amount of time.                                                   |
 | Sent with a Request | Sending a response in the form of cache does not come as a request to a user.                                          | Cookies pop up as a request in front of the users as a form of authorization/permission from them. In other words, it only sends a response to the servers with the end user’s confirmation. |
 | Types               | Proxy Cache and Browser Cache.                                                                                         | Persistent Cookies and Transient Cookies.                                                                                                                                                    |
+
+---
 
 ## HTTP URL Encoding
 
@@ -1833,6 +1945,9 @@ The following table shows the ASCII symbols of the characters and their replacem
 |     127     |              |                                     %7F                                      |
 |    > 127    |              | Encode with %xx where xx is the hexadecimal representation of the character. |
 
+
+---
+
 ## HTTP Security
 
 HTTP is used for communications over the internet, so application developers, information providers, and users should be aware of the security limitations in HTTP/1.1. This discussion does not include definitive solutions to the problems mentioned here but it does make some suggestions for reducing security risks.
@@ -1843,6 +1958,8 @@ HTTP is used for communications over the internet, so application developers, in
 * [**Location Headers and Spoofing**](#location-headers-and-spoofing)
 * [**Authentication Credentials**](#authentication-credentials)
 * [**Proxies and Caching**](#proxies-and-caching)
+
+---
 
 #### Personal Information Leakage
 
@@ -1855,11 +1972,15 @@ HTTP clients are often privy to large amount of personal information such as the
 * Clients should not include a Referer header field in a (non-secure) HTTP request, if the referring page was transferred with a secure protocol.
 * Authors of services that use the HTTP protocol should not use GET based forms for the submission of sensitive data, because it will cause the data to be encoded in the Request-URI.
 
+---
+
 #### File and Path Names Based Attack
 
 The document should be restricted to the documents returned by HTTP requests to be only those that were intended by the server administrators.
 
 For example, UNIX, Microsoft Windows, and other operating systems use '..' as a path component to indicate a directory level above the current one. On such a system, an HTTP server MUST disallow any such construct in the Request-URI, if it would otherwise allow access to a resource outside those intended to be accessible via the HTTP server.
+
+---
 
 #### DNS Spoofing
 
@@ -1867,15 +1988,21 @@ Clients using HTTP rely heavily on the Domain Name Service, and are thus general
 
 If HTTP clients cache the results of host name lookups in order to achieve a performance improvement, they must observe the TTL information reported by the DNS. If HTTP clients do not observe this rule, they could be spoofed when a previously-accessed server's IP address changes.
 
+---
+
 #### Location Headers and Spoofing
 
 If a single server supports multiple organizations that do not trust one another, then it MUST check the values of Location and Content Location headers in the responses that are generated under the control of said organizations to make sure that they do not attempt to invalidate resources over which they have no authority.
+
+---
 
 #### Authentication Credentials
 
 Existing HTTP clients and user agents typically retain authentication information indefinitely. HTTP/1.1 does not provide a method for a server to direct clients to discard these cached credentials which is a big security risk.
 
 There are a number of work around to the parts of this problem, and so it is recommended to make the use of password protection in screen savers, idle time-outs, and other methods that mitigate the security problems inherent in this problem.
+
+---
 
 #### Proxies and Caching
 
@@ -1884,6 +2011,8 @@ HTTP proxies are men-in-the-middle, and represent an opportunity for man-in-the-
 Proxy operators should protect the systems on which proxies run, as they would protect any system that contains or transports sensitive information.
 
 Caching proxies provide additional potential vulnerabilities, since the contents of the cache represent an attractive target for malicious exploitation. Therefore, cache contents should be protected as sensitive information.
+
+---
 
 ## HTTP Examples
 
@@ -1965,8 +2094,11 @@ Connection: Closed
 
 </html>
 ```
+---
 
 ## Reference
 
 * https://www.tutorialspoint.com/http/index.htm
 * https://www.javatpoint.com/http-tutorial
+
+---

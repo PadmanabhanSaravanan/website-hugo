@@ -1,7 +1,7 @@
 ---
 title: MySQL
 content_type: tutorial
-weight: 5
+weight: 10
 card:
   name: tutorials
   weight: 10
