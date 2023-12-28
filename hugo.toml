@@ -18,6 +18,8 @@ contentDir = "content/en"
     path = "github.com/google/docsy"
     disable = false
 
+staticDir = ['static']
+
 [params]
 # Google Custom Search Engine ID. Remove or comment out to disable search.
 gcs_engine_id = "011737558837375720776:fsdu1nryfng"

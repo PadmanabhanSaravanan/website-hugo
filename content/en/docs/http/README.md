@@ -11,7 +11,7 @@ description: |
 
 # HTTP
 
-![image http](/website/images-http/logo.png)
+![image http](/images-http/logo.png)
 
 ## TABLE OF CONTENT 
 
@@ -49,7 +49,7 @@ description: |
 
 **TCP/IP** - Transmission Control Protocol/Internet Protocol
 
-![image http](/website/images-http/http.png)
+![image http](/images-http/http.png)
 
 #### Features of HTTP
 
