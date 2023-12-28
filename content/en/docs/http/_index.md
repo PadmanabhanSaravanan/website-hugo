@@ -5,7 +5,8 @@ weight: 10
 card:
   name: tutorials
   weight: 10
-description: |
+description: | 
+   Documentation for HTTP
 ---
 
 ![image http](/images-http/logo.png)
@@ -41,7 +42,7 @@ description: |
 
 ---
 
-#### What is HTTP
+### What is HTTP
 
 * HTTP stands for Hyper Text Transfer Protocol
 * The primary function of HTTP is to establish a connection with the server and send HTML pages back to the user's browser.
@@ -55,7 +56,7 @@ description: |
 
 ---
 
-#### Features of HTTP
+### Features of HTTP
 
 There are three basic features of HTTP 
 
@@ -65,7 +66,7 @@ There are three basic features of HTTP
 
 ---
 
-#### HTTP Architecture
+### HTTP Architecture
 
 The following diagram shows a very basic architecture of a web application and depicts where HTTP sits:
 
@@ -81,7 +82,7 @@ The HTTP server responds with a status line, including the message's protocol ve
 
 ---
 
-#### Advantages of HTTP
+### Advantages of HTTP
 
 1. **Addressing**: HTTP uses advanced scheme of addressing. It assigns IP address with recognizable names so that it can be identified easily in the World Wide Web. Compared to the standard procedure of IP address with a series of numbers, using this the public can easily engage with the internet.
 
@@ -96,7 +97,7 @@ The HTTP server responds with a status line, including the message's protocol ve
 
 ---
 
-#### Disadvantages of HTTP
+### Disadvantages of HTTP
 
 1. **Data Integrity** : Since there are no any encryption methods used in HTTP, there are chances of someone altering the content. That is the reason why HTTP is considered to be an insecure method prone to data integrity.
 2. **Data Privacy** : Privacy is another problem faced in a HTTP connection. If any hacker manages to intercept the request they can view all the content present in the web page. Besides that they can also gather confidential informations such as the username and the password.
@@ -125,7 +126,7 @@ The various parameters of HTTP are as follows:
 
 ---
 
-#### HTTP Version
+### HTTP Version
 
 HTTP uses a **<major>**.**<minor>** numbering scheme to indicate versions of the protocol. The version of an HTTP message is indicated by an HTTP-Version field in the first line.
 
@@ -147,7 +148,7 @@ HTTP/1.1
 
 ---
 
-#### Uniform Resource Identifiers
+### Uniform Resource Identifiers
 
 Uniform Resource Identifiers (URI) are simply formatted, case-insensitive string containing name, location, etc. to identify a resource, for example, a website, a web service, etc.
 
@@ -170,7 +171,7 @@ http://ABC.com:/%7esmith/home.html
 
 ---
 
-#### Date or Time Formats
+### Date or Time Formats
 
 * All HTTP date/time stamps MUST be represented in Greenwich Mean Time (GMT), without exception.
 * HTTP applications are allowed to use any of the following three representations of date/time stamps:
@@ -183,7 +184,7 @@ Sun Nov  6 08:49:37 1994       ; ANSI C's asctime() format
 
 ---
 
-#### Character Sets
+### Character Sets
 
 We use character sets to specify the character sets that the client prefers. Multiple character sets can be listed separated by commas. If a value is not specified, the default is the US-ASCII
 
@@ -205,7 +206,7 @@ ISO-8859-7
 
 ---
 
-#### Content Encodings
+### Content Encodings
 
 A content encoding value indicates that an encoding algorithm has been used to encode the content before passing it over the network. Content coding are primarily used to allow a document to be compressed or otherwise usefully transformed without losing the identity.
 
@@ -229,7 +230,7 @@ Accept-encoding: deflate
 
 ---
 
-#### Media Types
+### Media Types
 
 HTTP uses Internet Media Types in the Content-Type and Accept header fields in order to provide open and extensible data typing and type negotiation. All the Media-type values are registered with the Internet Assigned Number Authority (IANA).
 
@@ -249,7 +250,7 @@ Accept: image/gif
 
 ---
 
-#### Language Tags
+### Language Tags
 
 HTTP uses language tags within the Accept-Language and Content-Language fields. A language tag is composed of one or more parts: a primary language tag and a possibly empty series of subtags:
 
@@ -291,7 +292,7 @@ The HTTP Messages can be classified as follows:
 
 ---
 
-#### Message Type
+### Message Type
 
 HTTP message consists of an initial request line and an initial response line.
 
@@ -331,7 +332,7 @@ HTTP/1.0 404 Not Found
 
 ---
 
-#### Message Headers
+### Message Headers
 
 The Message header provides information about the request and response. It also provides information about the object which is sent in the message body. Message Headers are of four types:
 
@@ -348,7 +349,7 @@ message-header = field-name ":" [ field-value ]
 
 ---
 
-#### Message Body
+### Message Body
 
 The message body of an HTTP message is used to carry the entire body associated with the request and response. The message-body differs from the entire-body only when a transfer-coding has been applied, as indicated by the Transfer-Encoding header field.
 
@@ -363,7 +364,7 @@ Transfer-Encoding MUST be used to indicate any transfer-codings which is applied
 
 ---
 
-#### Message Length
+### Message Length
 
 The transfer-length of a message is the length of the message-body, and it appears in the message.
 
@@ -371,7 +372,7 @@ In a message, when a message body is allowed, and Content-Length is given, its f
 
 ---
 
-#### General Header Fields
+### General Header Fields
 
 Some header fields have the applicability for both the request and response messages. These header fields apply only when the message is transmitted.
 
@@ -411,7 +412,7 @@ Request  = Request-Line
 
 ---
 
-#### Request Line
+### Request Line
 
 The Request-Line starts with a method token, which is followed by the Request-URI, the protocol version, and ending with CRLF. Using the SP characters, the elements are separated.
 
@@ -423,7 +424,7 @@ Request-Line   = Method SP Request-URI SP HTTP-Version CRLF
 
 ---
 
-#### Request Method
+### Request Method
 
 The request method indicates the method to be performed on the resource identified by the given Request-URI. The method is case-sensitive and should always be mentioned in uppercase. The following table lists all the supported methods in HTTP/1.1.
 
@@ -440,7 +441,7 @@ The request method indicates the method to be performed on the resource identifi
 
 ---
 
-#### Request URI
+### Request URI
 
 The Request-URI is a **Uniform Resource Identifier** and identifies the resource upon which to apply the request. Following are the most commonly used forms to specify an URI:
 
@@ -457,7 +458,7 @@ Request-URI = "*" | absoluteURI | abs_path | authority
 
 ---
 
-#### Request Header Fields
+### Request Header Fields
 
 This request-header field allows the client to pass additional information to the server, including the request and the client.The request header fields function as request modifiers, with semantics similar to the parameters of a method invocation in a programming language.
 
@@ -487,7 +488,7 @@ request-header = Accept
 
 ---
 
-#### HTTP Request Examples
+### HTTP Request Examples
 
 Now let's put it all together to form an HTTP request to fetch hello.htm page from the web
 
@@ -519,7 +520,7 @@ An HTTP response contains the following things:
 
 ---
 
-#### Message Status-Line
+### Message Status-Line
 
 A Status-Line consists of the protocol version followed by a numeric status code and its associated textual phrase. The elements are separated by space SP characters.
 
@@ -549,7 +550,7 @@ The Status-Code element is a 3-digit integer where first digit of the Status-Cod
 
 ---
 
-#### Response Header Fields
+### Response Header Fields
 
 The HTTP Headers for the response of the server contain the information that a client can use to find out more about the response, and about the server that sent it. This information is used to assist the client with displaying the response to a user, with storing the response for the use of future, and with making further requests to the server now or in the future.
 
@@ -567,7 +568,7 @@ response-header = Accept-Ranges
 
 ---
 
-#### HTTP Response Examples
+### HTTP Response Examples
 
 Now let's put it all together to form an HTTP response for a request to fetch the hello.htm page from the web server
 
@@ -632,7 +633,7 @@ For HTTP/1.1, the set of common methods are defined below. This set can be expan
 
 ---
 
-#### GET Method
+### GET Method
 
 A GET request retrieves data from a web server by specifying parameters in the URL portion of the request. This is the main method used for document retrieval. The following example makes use of GET method to fetch hello.htm:
 
@@ -670,7 +671,7 @@ Connection: Closed
 
 ---
 
-#### HEAD Method
+### HEAD Method
 
 The HEAD method is functionally similar to GET, except that the server replies with a response line and headers, but no entity-body. The following example makes use of HEAD method to fetch header information about hello.htm:
 
@@ -702,7 +703,7 @@ You can notice that here server the does not send any data after header.
 
 ---
 
-#### POST Method
+### POST Method
 
 The POST method is used when you want to send some data to the server, for example, file update, form data, etc. The following example makes use of POST method to send a form data to the server, which will be processed by a process.cgi and finally a response will be returned:
 
@@ -747,7 +748,7 @@ Connection: Closed
 
 ---
 
-#### PUT Method
+### PUT Method
 
 The PUT method is used to request the server to store the included entity-body at a location specified by the given URL. The following example requests the server to save the given entity-body in hello.htm at the root of the server:
 
@@ -790,7 +791,7 @@ Connection: Closed
 
 ---
 
-#### DELETE Method
+### DELETE Method
 
 The DELETE method is used to request the server to delete a file at a location specified by the given URL. The following example requests the server to delete the given file hello.htm at the root of the server:
 
@@ -823,7 +824,7 @@ Connection: Closed
 
 ---
 
-#### CONNECT Method
+### CONNECT Method
 
 The CONNECT method is used by the client to establish a network connection to a web server over HTTP. The following example requests a connection with a web server
 
@@ -842,7 +843,7 @@ Server: Apache/2.2.14 (Win32)
 
 ---
 
-#### OPTIONS Method
+### OPTIONS Method
 
 The OPTIONS method is used by the client to find out the HTTP methods and other options supported by a web server. The client can specify a URL for the OPTIONS method, or an asterisk (*) to refer to the entire server. The following example requests a list of methods supported by a web server running on tutorialspoint.com:
 
@@ -863,7 +864,7 @@ Content-Type: httpd/unix-directory
 
 ---
 
-#### TRACE Method
+### TRACE Method
 
 The TRACE method is used to echo the contents of an HTTP Request back to the requester which can be used for debugging purpose at the time of development. The following example shows the usage of TRACE method:
 
@@ -991,7 +992,7 @@ HTTP header fields provide required information about the request or response, o
 
 ---
 
-#### General Headers
+### General Headers
 
 **Cache-Control**
 
@@ -1128,7 +1129,7 @@ Warning : warn-code SP warn-agent SP warn-text SP warn-date
 
 ---
 
-#### Client Request-header
+### Client Request-header
 
 * **Accept**
 
@@ -1442,7 +1443,7 @@ User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
 
 ---
 
-#### Server Response Headers
+### Server Response Headers
 
 * **Accept-Ranges**
 
@@ -1565,7 +1566,7 @@ Set-Cookie: NAME=VALUE; OPTIONS
 
 ---
 
-#### Entity Headers
+### Entity Headers
 
 * **Allow**
 
@@ -1749,7 +1750,7 @@ A cookie is a piece of data that is issued by a server in an HTTP response and s
 
 ---
 
-#### Setting Cookies
+### Setting Cookies
 
 Servers supply cookies by populating the set-cookie response header with the following details:
 
@@ -1764,7 +1765,7 @@ These fields allow a server to create, modify, delete, and control which parts o
 
 ---
 
-#### Retrieving Cookies
+### Retrieving Cookies
 
 Whenever a client is about to make an HTTP request it consults its local cookie store to see if any unexpired cookies match the path and domain it is about to use. Any matching cookie values are submitted back to the server using the cookie header.
 
@@ -1961,7 +1962,7 @@ HTTP is used for communications over the internet, so application developers, in
 
 ---
 
-#### Personal Information Leakage
+### Personal Information Leakage
 
 HTTP clients are often privy to large amount of personal information such as the user's name, location, mail address, passwords, encryption keys, etc. So you should be very careful to prevent unintentional leakage of this information via the HTTP protocol to other sources.
 
@@ -1974,7 +1975,7 @@ HTTP clients are often privy to large amount of personal information such as the
 
 ---
 
-#### File and Path Names Based Attack
+### File and Path Names Based Attack
 
 The document should be restricted to the documents returned by HTTP requests to be only those that were intended by the server administrators.
 
@@ -1982,7 +1983,7 @@ For example, UNIX, Microsoft Windows, and other operating systems use '..' as a 
 
 ---
 
-#### DNS Spoofing
+### DNS Spoofing
 
 Clients using HTTP rely heavily on the Domain Name Service, and are thus generally prone to security attacks based on the deliberate mis-association of IP addresses and DNS names. So clients need to be cautious in assuming the continuing validity of an IP number/DNS name association.
 
@@ -1990,13 +1991,13 @@ If HTTP clients cache the results of host name lookups in order to achieve a per
 
 ---
 
-#### Location Headers and Spoofing
+### Location Headers and Spoofing
 
 If a single server supports multiple organizations that do not trust one another, then it MUST check the values of Location and Content Location headers in the responses that are generated under the control of said organizations to make sure that they do not attempt to invalidate resources over which they have no authority.
 
 ---
 
-#### Authentication Credentials
+### Authentication Credentials
 
 Existing HTTP clients and user agents typically retain authentication information indefinitely. HTTP/1.1 does not provide a method for a server to direct clients to discard these cached credentials which is a big security risk.
 
@@ -2004,7 +2005,7 @@ There are a number of work around to the parts of this problem, and so it is rec
 
 ---
 
-#### Proxies and Caching
+### Proxies and Caching
 
 HTTP proxies are men-in-the-middle, and represent an opportunity for man-in-the-middle attacks. Proxies have access to security-related information, personal information about individual users and organizations, and proprietary information belonging to users and content providers.
 
