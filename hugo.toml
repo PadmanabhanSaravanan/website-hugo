@@ -33,8 +33,6 @@ version_menu = "Versions"
 time_format_blog = "Monday, January 02, 2006"
 time_format_default = "January 02, 2006 at 3:04 PM PST"
 
-githubbranch = "master"
-
 # See code_sample shortcode
 githubWebsiteRaw = "raw.githubusercontent.com/PadmanabhanSaravanan/website"
 
