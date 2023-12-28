@@ -17,7 +17,12 @@
         {{ end }}
       </div>
       <div class="td-footer__copyright-etc col-12 col-sm-4 text-center py-2 order-sm-2">
-       <img src="images/logo1.png" alt="Swayaan" width="25px" height="25px" /> &nbsp; Copyright 
+        {{- if ne .Site.Params.ui.navbar_logo false -}}
+        {{ with resources.Get "image/logo1.png" -}}
+          <img src="{{ .RelPermalink }}" alt="Icon 1" width="25px" height="25px">
+        {{ end }}
+        {{ end -}}
+        &nbsp; Copyright 
         &copy; Swayaan LMS - Powered by <a href="http://www.swayaan.com">Swayaan.com</a>
       </div>
     </div>

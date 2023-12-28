@@ -18,7 +18,7 @@
     {{- /**/ -}}
     <span class="navbar-brand__logo navbar-logo">
       {{- if ne .Site.Params.ui.navbar_logo false -}}
-        {{ with resources.Get "images/logo1.png" -}}
+        {{ with resources.Get "image/logo1.png" -}}
           <img src="{{ .RelPermalink }}" alt="Icon 1" width="25px" height="25px">
         {{ end }}
       {{ end -}}
