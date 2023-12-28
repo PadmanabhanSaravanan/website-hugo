@@ -48,7 +48,8 @@ description: |
 <br>
 
 **TCP/IP** - Transmission Control Protocol/Internet Protocol
-![image http](/images-http/http.png)
+
+![image http](/website/images-http/http.png)
 
 #### Features of HTTP
 
