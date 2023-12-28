@@ -11,7 +11,7 @@ description: |
 
 # HTTP
 
-![image logo](/docs/http/public/images-http/logo.png)
+![image logo](/content/en/docs/http/public/images-http/logo.png)
 <img src="docs/http/public/images-http/logo.png">
 
 ## TABLE OF CONTENT 
