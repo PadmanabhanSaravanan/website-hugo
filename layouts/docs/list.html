@@ -9,8 +9,8 @@
 		{{ end -}}
 	</header>
 	{{ .Content }}
-  {{ partial "section-index.html" . -}}
-	{{ partial "feedback.html" . -}}
+  <!-- {{ partial "section-index.html" . -}} -->
+	<!-- {{ partial "feedback.html" . -}} -->
 	{{ if (.Site.DisqusShortname) -}}
 		<br />
 		{{- partial "disqus-comment.html" . -}}
