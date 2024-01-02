@@ -9,9 +9,7 @@ description: |
    Documentation for Hugo template
 ---
 
-# Hugo
-
-## Table of Content
+# Table of Content
 
 * [**Introduction to Hugo**](#introduction-to-hugo)
 * [**Prerequisites**](#prerequisites)
@@ -179,7 +177,7 @@ This creates two new files, `go.mod` for the module definitions and `go.sum` whi
 Next declare the Docsy theme module as a dependency for your site.
 
 ```bash
-hugo mod get github.com/google/docsy@v{{% param "version" %}}
+hugo mod get github.com/google/docsy@v0.8.0
 ```
 
 This command adds the `docsy` theme module to your definition file `go.mod`.
