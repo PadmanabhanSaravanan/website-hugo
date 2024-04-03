@@ -284,7 +284,7 @@ HTTP Message is used to show how data is exchanged between the client and the se
 
 The HTTP Messages can be classified as follows:
 
-* [**Message Type**](#message-types)
+* [**Message Type**](#message-type)
 * [**Message Headers**](#message-headers)
 * [**Message Body**](#message-body)
 * [**Message Length**](#message-length)
