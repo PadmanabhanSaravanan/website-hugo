@@ -6,7 +6,7 @@ card:
   name: tutorials
   weight: 10
 description: | 
-   Documentation for HTTP
+   Documentation for HTTP 
 ---
 
 ![image http](/images-http/logo.png)
